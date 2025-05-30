@@ -149,7 +149,7 @@ miniconda3/
 Miniconda3-*.sh
 
 # Data files
-*.csv
+# *.csv  # CSVファイルは匿名化済みのため、GitHubにアップロード可能
 *.xlsx
 *.xls
 data/
