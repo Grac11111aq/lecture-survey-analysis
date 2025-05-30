@@ -29,6 +29,8 @@ Alternatively, use the convenience script:
 - **Check status**: `git status`
 - **Commit changes**: `git add . && git commit -m "message"`
 - **Push to GitHub**: `git push`
+- **GitHub Repository**: https://github.com/Grac11111aq/lecture-survey-analysis
+- **Default Branch**: `main` (masterブランチは削除済み)
 
 ## Data Architecture
 
@@ -42,9 +44,11 @@ The analysis expects survey data in the following format:
 - `感想` (Comments): Free text
 
 ### Available Data Files
-- `before.csv`: Pre-class survey data
-- `after.csv`: Post-class survey data
-- `comment.csv`: Additional comments
+- `before.csv`: Pre-class survey data (匿名化済み、GitHubで公開)
+- `after.csv`: Post-class survey data (匿名化済み、GitHubで公開)
+- `comment.csv`: Additional comments (匿名化済み、GitHubで公開)
+
+**Note**: すべてのCSVデータは個人情報を含まない匿名化済みデータです。Page_IDを使用して個人を特定できないようになっています。
 
 ## Analysis Pipeline Architecture
 
@@ -76,3 +80,19 @@ The sample notebook (`survey_analysis_sample.ipynb`) follows this structure:
 
 ### Environment Management
 The project uses Miniconda installed locally in `./miniconda3`. This avoids system-level dependencies and ensures reproducibility.
+
+## Project Updates (2025-05-30)
+
+### Recent Changes
+1. **GitHub Integration**: 
+   - リポジトリをGitHubに公開: https://github.com/Grac11111aq/lecture-survey-analysis
+   - デフォルトブランチを`main`に統一（`master`ブランチは削除）
+   
+2. **Data Sharing**:
+   - 匿名化済みCSVファイル（before.csv, after.csv, comment.csv）をGitHubで公開
+   - .gitignoreを更新してCSVファイルの除外を解除
+   
+3. **Security Considerations**:
+   - Miniconda環境（miniconda3/）は.gitignoreで除外
+   - 個人情報を含まないデータのみを公開
+   - Page_IDによる匿名化で個人を特定できない仕組み
