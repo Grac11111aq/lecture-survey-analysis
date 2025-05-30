@@ -1,0 +1,41 @@
+Q1_Sugarwater_Response と Q1_Ink_Response 検証レポート
+============================================================
+
+検証日時: 2025年05月30日 16:44:12
+
+## 検証概要
+手動入力Excelファイルと現在のCSVファイルの
+Q1_Sugarwater_Response と Q1_Ink_Response の一致率を検証
+
+## 検証結果
+
+### Q1_Sugarwater_Response
+- 総比較数: 51
+- 一致数: 48
+- 不一致数: 3
+- **一致率: 94.1%**
+
+#### 不一致の詳細
+- Excel_ID4 → Page_ID4: Excel=1.0(True) ≠ CSV=False
+- Excel_ID5 → Page_ID5: Excel=1.0(True) ≠ CSV=False
+- Excel_ID9 → Page_ID9: Excel=1.0(True) ≠ CSV=False
+
+### Q1_Ink_Response
+- 総比較数: 51
+- 一致数: 42
+- 不一致数: 9
+- **一致率: 82.4%**
+
+#### 不一致の詳細
+- Excel_ID4 → Page_ID4: Excel=0.0(False) ≠ CSV=True
+- Excel_ID5 → Page_ID5: Excel=0.0(False) ≠ CSV=True
+- Excel_ID6 → Page_ID6: Excel=0.0(False) ≠ CSV=True
+- Excel_ID9 → Page_ID9: Excel=0.0(False) ≠ CSV=True
+- Excel_ID11 → Page_ID11: Excel=0.0(False) ≠ CSV=True
+
+## 結論
+
+Q1_Sugarwater_Response: 94.1% 一致
+Q1_Ink_Response: 82.4% 一致
+
+不一致がある場合は、OCR修正処理の追加調整が必要です。

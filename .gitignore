@@ -152,14 +152,14 @@ Miniconda3-*.sh
 # *.csv  # CSVファイルは匿名化済みのため、GitHubにアップロード可能
 *.xlsx
 *.xls
-data/
+# data/  # 整理されたデータディレクトリは追跡する
 raw_data/
 processed_data/
 
 # Output files
 output/
 results/
-reports/
+# reports/  # 整理されたレポートディレクトリは追跡する
 figures/
 plots/
 

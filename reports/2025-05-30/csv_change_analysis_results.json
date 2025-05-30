@@ -1,0 +1,87 @@
+{
+  "timestamp": "2025-05-30T16:15:44.611314",
+  "structure_analysis": {
+    "before": {
+      "rows": {
+        "original": 99,
+        "current": 99
+      },
+      "columns": {
+        "original": 11,
+        "current": 11
+      },
+      "dtypes_changes": {
+        "Q1_Muddywater_Response": {
+          "original": "object",
+          "current": "bool"
+        },
+        "Q1_MisoSoup_Response": {
+          "original": "object",
+          "current": "bool"
+        },
+        "Q1_SoySauce_Response": {
+          "original": "object",
+          "current": "bool"
+        }
+      },
+      "nan_changes": {
+        "Q1_Muddywater_Response": {
+          "original": 3,
+          "current": 0
+        },
+        "Q1_Ink_Response": {
+          "original": 4,
+          "current": 1
+        },
+        "Q1_MisoSoup_Response": {
+          "original": 1,
+          "current": 0
+        },
+        "Q1_SoySauce_Response": {
+          "original": 3,
+          "current": 0
+        },
+        "Q3_TeaLeavesDissolve": {
+          "original": 5,
+          "current": 1
+        },
+        "Q3_TeaComponentsDissolve": {
+          "original": 6,
+          "current": 1
+        }
+      }
+    },
+    "after": {
+      "rows": {
+        "original": 99,
+        "current": 99
+      },
+      "columns": {
+        "original": 17,
+        "current": 17
+      },
+      "dtypes_changes": {},
+      "nan_changes": {}
+    }
+  },
+  "non_excel_identification": {
+    "non_excel_page_ids_before": "set()",
+    "non_excel_page_ids_after": "set()"
+  },
+  "non_excel_changes": {
+    "before": {
+      "total_changes": 0,
+      "changes_by_column": {},
+      "changes_detail": []
+    },
+    "after": {
+      "total_changes": 0,
+      "changes_by_column": {},
+      "changes_detail": []
+    }
+  },
+  "column_analysis": {
+    "before": {},
+    "after": {}
+  }
+}
