@@ -25,6 +25,10 @@ Alternatively, use the convenience script:
 - **Install new packages**: `pip install package_name` or `conda install -c conda-forge package_name`
 - **Export environment**: `conda env export > environment.yml`
 
+### Analysis Tools
+- **Visidata**: 解析・分析ツールとして利用可能です。大規模CSVデータの探索的分析に特に有効です
+- **Additional Tools**: 行いたい解析・分析に必要なツールのインストール・セットアップは許可されており、推奨されています
+
 ### Git Operations
 - **Check status**: `git status`
 - **Commit changes**: `git add . && git commit -m "message"`
@@ -43,10 +47,26 @@ The analysis expects survey data in the following format:
 - `興味の変化` (Interest Change): とても興味を持った, 興味を持った, 変わらない, 興味が減った
 - `感想` (Comments): Free text
 
-### Available Data Files
-- `before.csv`: Pre-class survey data (匿名化済み、GitHubで公開)
-- `after.csv`: Post-class survey data (匿名化済み、GitHubで公開)
-- `comment.csv`: Additional comments (匿名化済み、GitHubで公開)
+### Data Organization Structure
+The project follows a hierarchical data organization:
+
+```
+data/
+├── analysis/          # Final analysis-ready datasets
+│   ├── before_excel_compliant.csv
+│   ├── after_excel_compliant.csv
+│   ├── comment.csv
+│   ├── DATA_CONTEXT.md
+│   └── README.md
+├── raw/              # Original CSV files (OCR processed)
+│   ├── before.csv
+│   ├── after.csv
+│   └── comment.csv
+├── intermediate/     # Intermediate processing files
+│   └── *_raw.csv
+└── validation/       # Excel-based validation data
+    └── *_excel.csv
+```
 
 **Note**: すべてのCSVデータは個人情報を含まない匿名化済みデータです。Page_IDを使用して個人を特定できないようになっています。
 
@@ -81,18 +101,40 @@ The sample notebook (`survey_analysis_sample.ipynb`) follows this structure:
 ### Environment Management
 The project uses Miniconda installed locally in `./miniconda3`. This avoids system-level dependencies and ensures reproducibility.
 
-## Project Updates (2025-05-30)
+## Available Scripts
 
-### Recent Changes
-1. **GitHub Integration**: 
-   - リポジトリをGitHubに公開: https://github.com/Grac11111aq/lecture-survey-analysis
-   - デフォルトブランチを`main`に統一（`master`ブランチは削除）
-   
-2. **Data Sharing**:
-   - 匿名化済みCSVファイル（before.csv, after.csv, comment.csv）をGitHubで公開
-   - .gitignoreを更新してCSVファイルの除外を解除
-   
-3. **Security Considerations**:
-   - Miniconda環境（miniconda3/）は.gitignoreで除外
-   - 個人情報を含まないデータのみを公開
-   - Page_IDによる匿名化で個人を特定できない仕組み
+### Data Processing Scripts
+Located in `scripts/` directory, organized by functionality:
+
+- **analysis/**: Data validation and analysis tools
+  - `excel_to_csv_converter.py`: Convert Excel validation data to CSV format
+  - `csv_change_analyzer.py`: Analyze changes between OCR and Excel data
+  - `data_analysis_explorer.py`: Exploratory data analysis utilities
+  
+- **correction/**: Data correction and cleaning scripts
+  - `final_data_corrector.py`: Apply final corrections to survey data
+  - Scripts handle OCR error correction and data normalization
+
+### Running Scripts
+```bash
+# Activate environment first
+./activate_env.sh
+
+# Run analysis script
+python scripts/analysis/csv_change_analyzer.py
+
+# Convert Excel to CSV
+python scripts/analysis/excel_to_csv_converter.py
+```
+
+## Survey Data Context
+
+The surveys measure educational effectiveness of elementary school outreach programs on "How things dissolve" (ものの溶け方). Key experiments include:
+
+1. **Flame color reaction** (炎色反応): Demonstrating different colored flames from metal solutions
+2. **Sodium acetate crystallization**: Showing phase transitions from supersaturated solutions
+
+Survey structure:
+- **Pre-class survey**: Understanding of solutions (water solutions vs. suspensions)
+- **Post-class survey**: Same questions plus experiment evaluation and learning outcomes
+- **Comments**: Free-text feedback on the educational experience

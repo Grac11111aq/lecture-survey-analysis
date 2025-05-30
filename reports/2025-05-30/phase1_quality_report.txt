@@ -1,0 +1,77 @@
+================================================================================
+Phase 1: データ品質確認レポート
+生成日時: 2025-05-30 19:11:35
+================================================================================
+
+## データサマリー
+- 授業前アンケート: 112件
+- 授業後アンケート: 112件
+- 感想文: 21件
+
+## Page_ID一貫性
+- マッチング数: 62件
+- 授業前のみ: 2件
+- 授業後のみ: 5件
+
+## 欠損値分析
+
+### before_missing:
+                          欠損数  欠損率(%)
+Q1_Saltwater_Response     112  100.00
+Q1_Sugarwater_Response    112  100.00
+Q1_SoySauce_Response      112  100.00
+Q1_Muddywater_Response    112  100.00
+Q1_Ink_Response           112  100.00
+Q1_MisoSoup_Response      112  100.00
+Q3_TeaComponentsDissolve  112  100.00
+Q3_TeaLeavesDissolve      112  100.00
+Q2_MisoSalty_Reason        28   25.00
+class                      13   11.61
+
+### after_missing:
+                                   欠損数  欠損率(%)
+Q1_Saltwater                       112  100.00
+Q1_Sugarwater                      112  100.00
+Q1_Muddywater                      112  100.00
+Q1_Ink                             112  100.00
+Q1_SoySauce                        112  100.00
+Q1_MisoSoup                        112  100.00
+Q3_TeaLeaves_DissolveInWater       112  100.00
+Q3_TeaComponents_DissolveInWater   112  100.00
+Q6_DissolvingUnderstandingComment  112  100.00
+Q4_ExperimentInterestComment       112  100.00
+GeneralPageComments                112  100.00
+Q4_ExperimentInterestRating         40   35.71
+Q5_NewLearningsRating               39   34.82
+Q6_DissolvingUnderstandingRating    39   34.82
+Q2_MisoSaltyReason                  17   15.18
+class                               13   11.61
+
+## 品質判定
+- 警告: 以下の項目は欠損率が20%を超えています:
+  - 授業前: Q1_Saltwater_Response
+  - 授業前: Q1_Sugarwater_Response
+  - 授業前: Q1_SoySauce_Response
+  - 授業前: Q1_Muddywater_Response
+  - 授業前: Q1_Ink_Response
+  - 授業前: Q1_MisoSoup_Response
+  - 授業前: Q3_TeaComponentsDissolve
+  - 授業前: Q3_TeaLeavesDissolve
+  - 授業前: Q2_MisoSalty_Reason
+  - 授業後: Q1_Saltwater
+  - 授業後: Q1_Sugarwater
+  - 授業後: Q1_Muddywater
+  - 授業後: Q1_Ink
+  - 授業後: Q1_SoySauce
+  - 授業後: Q1_MisoSoup
+  - 授業後: Q3_TeaLeaves_DissolveInWater
+  - 授業後: Q3_TeaComponents_DissolveInWater
+  - 授業後: Q6_DissolvingUnderstandingComment
+  - 授業後: Q4_ExperimentInterestComment
+  - 授業後: GeneralPageComments
+  - 授業後: Q4_ExperimentInterestRating
+  - 授業後: Q5_NewLearningsRating
+  - 授業後: Q6_DissolvingUnderstandingRating
+
+## 推奨事項
+- Page_IDのマッチングに問題があります。前後比較分析では共通IDのみを使用することを推奨します

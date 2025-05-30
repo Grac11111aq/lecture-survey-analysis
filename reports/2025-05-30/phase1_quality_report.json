@@ -1,0 +1,199 @@
+{
+  "generated_at": "2025-05-30T19:11:35.827318",
+  "data_summary": {
+    "before_survey": {
+      "total_records": 112,
+      "columns": [
+        "Page_ID",
+        "Excel_ID",
+        "class",
+        "Q1_Saltwater_Response",
+        "Q1_Sugarwater_Response",
+        "Q1_Muddywater_Response",
+        "Q1_Ink_Response",
+        "Q1_MisoSoup_Response",
+        "Q1_SoySauce_Response",
+        "Q3_TeaLeavesDissolve",
+        "Q3_TeaComponentsDissolve",
+        "Q2_MisoSalty_Reason"
+      ]
+    },
+    "after_survey": {
+      "total_records": 112,
+      "columns": [
+        "Page_ID",
+        "Excel_ID",
+        "class",
+        "Q1_Saltwater",
+        "Q1_Sugarwater",
+        "Q1_Muddywater",
+        "Q1_Ink",
+        "Q1_MisoSoup",
+        "Q1_SoySauce",
+        "Q3_TeaLeaves_DissolveInWater",
+        "Q3_TeaComponents_DissolveInWater",
+        "Q2_MisoSaltyReason",
+        "Q4_ExperimentInterestRating",
+        "Q4_ExperimentInterestComment",
+        "Q5_NewLearningsRating",
+        "Q6_DissolvingUnderstandingRating",
+        "Q6_DissolvingUnderstandingComment",
+        "GeneralPageComments"
+      ]
+    },
+    "comments": {
+      "total_records": 21,
+      "columns": [
+        "class",
+        "page-ID",
+        "LR",
+        "comment"
+      ]
+    }
+  },
+  "quality_checks": {
+    "before_missing": [
+      {
+        "欠損数": 112,
+        "欠損率(%)": 100.0
+      },
+      {
+        "欠損数": 112,
+        "欠損率(%)": 100.0
+      },
+      {
+        "欠損数": 112,
+        "欠損率(%)": 100.0
+      },
+      {
+        "欠損数": 112,
+        "欠損率(%)": 100.0
+      },
+      {
+        "欠損数": 112,
+        "欠損率(%)": 100.0
+      },
+      {
+        "欠損数": 112,
+        "欠損率(%)": 100.0
+      },
+      {
+        "欠損数": 112,
+        "欠損率(%)": 100.0
+      },
+      {
+        "欠損数": 112,
+        "欠損率(%)": 100.0
+      },
+      {
+        "欠損数": 28,
+        "欠損率(%)": 25.0
+      },
+      {
+        "欠損数": 13,
+        "欠損率(%)": 11.61
+      }
+    ],
+    "after_missing": [
+      {
+        "欠損数": 112,
+        "欠損率(%)": 100.0
+      },
+      {
+        "欠損数": 112,
+        "欠損率(%)": 100.0
+      },
+      {
+        "欠損数": 112,
+        "欠損率(%)": 100.0
+      },
+      {
+        "欠損数": 112,
+        "欠損率(%)": 100.0
+      },
+      {
+        "欠損数": 112,
+        "欠損率(%)": 100.0
+      },
+      {
+        "欠損数": 112,
+        "欠損率(%)": 100.0
+      },
+      {
+        "欠損数": 112,
+        "欠損率(%)": 100.0
+      },
+      {
+        "欠損数": 112,
+        "欠損率(%)": 100.0
+      },
+      {
+        "欠損数": 112,
+        "欠損率(%)": 100.0
+      },
+      {
+        "欠損数": 112,
+        "欠損率(%)": 100.0
+      },
+      {
+        "欠損数": 112,
+        "欠損率(%)": 100.0
+      },
+      {
+        "欠損数": 40,
+        "欠損率(%)": 35.71
+      },
+      {
+        "欠損数": 39,
+        "欠損率(%)": 34.82
+      },
+      {
+        "欠損数": 39,
+        "欠損率(%)": 34.82
+      },
+      {
+        "欠損数": 17,
+        "欠損率(%)": 15.18
+      },
+      {
+        "欠損数": 13,
+        "欠損率(%)": 11.61
+      }
+    ],
+    "comment_missing": [],
+    "page_id_consistency": {
+      "matched_count": 62,
+      "only_before": [
+        "PAGE_025",
+        "PAGE_026"
+      ],
+      "only_after": [
+        "PAGE_095",
+        "PAGE_096",
+        "PAGE_098",
+        "PAGE_099",
+        "PAGE_097"
+      ],
+      "before_duplicates": 48,
+      "after_duplicates": 45
+    },
+    "before_logical_inconsistencies": [],
+    "after_logical_inconsistencies": [],
+    "before_outliers": [
+      {
+        "column": "みそ汁理由（授業前）",
+        "short_outliers": 2,
+        "long_outliers": 4,
+        "median_length": 11.0
+      }
+    ],
+    "after_outliers": [
+      {
+        "column": "みそ汁理由（授業後）",
+        "short_outliers": 0,
+        "long_outliers": 8,
+        "median_length": 13.0
+      }
+    ]
+  }
+}
