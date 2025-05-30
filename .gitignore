@@ -92,6 +92,8 @@ poetry.lock
 
 # pdm
 .pdm.toml
+.pdm-python
+.pdm-build/
 
 # PEP 582
 __pypackages__/
@@ -139,37 +141,50 @@ cython_debug/
 # PyCharm
 .idea/
 
-# VS Code
+# VSCode
 .vscode/
 
-# Miniconda / Anaconda
+# Miniconda
 miniconda3/
-anaconda3/
-.conda/
-*.conda
-*.tar.bz2
+Miniconda3-*.sh
 
 # Data files
 *.csv
 *.xlsx
 *.xls
-data/raw/
-data/processed/
+data/
+raw_data/
+processed_data/
 
 # Output files
 output/
 results/
+reports/
 figures/
 plots/
-
-# OS files
-.DS_Store
-Thumbs.db
-*.swp
-*.swo
-*~
 
 # Temporary files
 *.tmp
 *.temp
+.DS_Store
+*~
+*.swp
+*.swo
+
+# Log files
+logs/
+*.log
+
+# Database files
+*.db
+*.sqlite
+
+# Backup files
 *.bak
+backup/
+
+# Survey specific
+survey_data/
+survey_results/
+survey_summary.csv
+survey_analysis_results.xlsx
