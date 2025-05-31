@@ -1,0 +1,29 @@
+TaskID,TaskName,CompletionDate,Status,ActualTime,EstimatedTime,QualityCheck,Notes
+# タスク完了ログ - CSV形式
+# フォーマット: TaskID,TaskName,CompletionDate,Status,ActualTime,EstimatedTime,QualityCheck,Notes
+
+# === 分析フェーズ完了記録（参考・再実行禁止） ===
+PHASE1,データ品質分析,2025-05-31,completed,N/A,N/A,passed,outputs/archive/phase1_detailed_results.json
+PHASE2,独立群比較分析,2025-05-31,completed,N/A,N/A,passed,outputs/current/02_group_comparison/phase2_revised_results.json
+PHASE3,クラス間分析,2025-05-31,completed,N/A,N/A,passed,outputs/archive/phase3_detailed_results.json
+PHASE4,テキスト分析,2025-05-31,completed,N/A,N/A,passed,outputs/archive/phase4_detailed_results.json
+PHASE5,統合レポート,2025-05-31,completed,N/A,N/A,passed,outputs/current/05_final_report/integrated_final_report.json
+ADV_SEM,SEM構造方程式分析,2025-05-31,completed,N/A,N/A,passed,outputs/current/05_advanced_analysis/structural_equation_modeling_results.json
+ADV_ML,機械学習予測分析,2025-05-31,completed,N/A,N/A,passed,outputs/current/05_advanced_analysis/machine_learning_prediction_results.json
+ADV_PWR,統計的検出力分析,2025-05-31,completed,N/A,N/A,passed,outputs/current/05_advanced_analysis/power_analysis_results.json
+
+# === 解釈・報告書フェーズ（現在実行対象） ===
+# A1,Q1スコア低下解釈レポート,YYYY-MM-DD HH:MM,completed,XX時間,2時間,passed,成果物場所
+# A2,ステークホルダー別要約,YYYY-MM-DD HH:MM,completed,XX時間,1.5時間,passed,成果物場所
+# A4,クラス2異常値詳細分析,YYYY-MM-DD HH:MM,completed,XX時間,2時間,passed,成果物場所
+# A3,プロジェクト完了報告書,YYYY-MM-DD HH:MM,completed,XX時間,1時間,passed,成果物場所
+# B1,批判的検討・代替解釈,YYYY-MM-DD HH:MM,completed,XX時間,1時間,passed,成果物場所
+# B3,統計方法論限界考察,YYYY-MM-DD HH:MM,completed,XX時間,1時間,passed,成果物場所
+# B2,データ品質再検証,YYYY-MM-DD HH:MM,completed,XX時間,0.5時間,passed,成果物場所
+
+# === 完了時記録例 ===
+# A1,Q1スコア低下解釈レポート,2025-05-31 18:30,completed,1.8時間,2時間,passed,docs/reports/interpretation_reports/A1_Q1_interpretation_report_20250531.mdA1,Q1スコア低下解釈レポート作成,,completed,2時間,2時間,passed,docs/reports/interpretation_reports/A1_Q1_interpretation_report_20250531.md
+A1,Q1スコア低下解釈レポート作成,2025-05-31 17:00,completed,2時間,2時間,passed,docs/reports/interpretation_reports/A1_Q1_interpretation_report_20250531.md
+A2,ステークホルダー別要約作成,2025-05-31 17:00,completed,1.5時間,1.5時間,passed,docs/reports/stakeholder_summaries/A2_stakeholder_summary_20250531.md
+A4,クラス2異常値詳細分析,2025-05-31 17:02,completed,2時間,2時間,passed,docs/reports/interpretation_reports/A4_class2_detailed_analysis_20250531.md
+A3,プロジェクト完了報告書統合,2025-05-31 17:04,completed,1時間,1時間,passed,docs/reports/A3_project_completion_report_20250531.md
