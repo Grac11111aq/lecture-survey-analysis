@@ -1,0 +1,177 @@
+{
+  "metadata": {
+    "analysis_type": "Structural Equation Modeling",
+    "generated_at": "2025-05-31T15:40:01.093651",
+    "sample_size_before": "99",
+    "sample_size_after": "99",
+    "analysis_approach": "Independent Groups Comparison"
+  },
+  "data_summary": {
+    "variables_analyzed": [
+      "Q1_total",
+      "Q3_total",
+      "Q4_interest",
+      "Q5_learning",
+      "Q6_understanding"
+    ],
+    "correlation_matrix": {
+      "Q1_total": {
+        "Q1_total": 1.0,
+        "Q3_total": -0.01151939193960219,
+        "Q4_interest": -0.012294391273769521,
+        "Q5_learning": 0.0015393434979272072,
+        "Q6_understanding": 0.03232621345646789
+      },
+      "Q3_total": {
+        "Q1_total": -0.01151939193960219,
+        "Q3_total": 1.0,
+        "Q4_interest": 0.7799553809205736,
+        "Q5_learning": 0.7802445795963049,
+        "Q6_understanding": 0.7863986213508671
+      },
+      "Q4_interest": {
+        "Q1_total": -0.012294391273769521,
+        "Q3_total": 0.7799553809205736,
+        "Q4_interest": 1.0,
+        "Q5_learning": 0.9634048212082404,
+        "Q6_understanding": 0.9486078929772475
+      },
+      "Q5_learning": {
+        "Q1_total": 0.0015393434979272072,
+        "Q3_total": 0.7802445795963049,
+        "Q4_interest": 0.9634048212082404,
+        "Q5_learning": 1.0,
+        "Q6_understanding": 0.9397321428571432
+      },
+      "Q6_understanding": {
+        "Q1_total": 0.03232621345646789,
+        "Q3_total": 0.7863986213508671,
+        "Q4_interest": 0.9486078929772475,
+        "Q5_learning": 0.9397321428571432,
+        "Q6_understanding": 1.0
+      }
+    },
+    "descriptive_statistics": null
+  },
+  "model_results": {
+    "regression_coefficients": {
+      "Q1_total": 0.055144691625786044,
+      "Q3_total": 0.22661844537408393,
+      "Q4_interest": 0.5483053554328298,
+      "Q5_learning": 0.31368661654617513
+    },
+    "r_squared": 0.9141827033051425,
+    "significant_correlations": [
+      {
+        "Q3_total_vs_Q4_interest": {
+          "r": 0.7799553809205736,
+          "p": 1.8586510379619505e-21
+        },
+        "Q3_total_vs_Q5_learning": {
+          "r": 0.7802445795963048,
+          "p": 1.756964211064117e-21
+        },
+        "Q3_total_vs_Q6_understanding": {
+          "r": 0.7863986213508674,
+          "p": 5.198440816034522e-22
+        },
+        "Q4_interest_vs_Q5_learning": {
+          "r": 0.9634048212082399,
+          "p": 2.886176334179549e-57
+        },
+        "Q4_interest_vs_Q6_understanding": {
+          "r": 0.9486078929772475,
+          "p": 2.8838590368165086e-50
+        },
+        "Q5_learning_vs_Q6_understanding": {
+          "r": 0.9397321428571429,
+          "p": 5.290373562099025e-47
+        }
+      }
+    ]
+  },
+  "interpretations": {
+    "correlation_analysis": {
+      "model_type": "Correlation and Regression Analysis",
+      "sample_size": 99,
+      "regression_r_squared": 0.9141827033051425,
+      "significant_correlations": [
+        {
+          "relationship": "Q3_total_vs_Q4_interest",
+          "correlation": 0.7799553809205736,
+          "p_value": 1.8586510379619505e-21,
+          "interpretation": "強い関連"
+        },
+        {
+          "relationship": "Q3_total_vs_Q5_learning",
+          "correlation": 0.7802445795963048,
+          "p_value": 1.756964211064117e-21,
+          "interpretation": "強い関連"
+        },
+        {
+          "relationship": "Q3_total_vs_Q6_understanding",
+          "correlation": 0.7863986213508674,
+          "p_value": 5.198440816034522e-22,
+          "interpretation": "強い関連"
+        },
+        {
+          "relationship": "Q4_interest_vs_Q5_learning",
+          "correlation": 0.9634048212082399,
+          "p_value": 2.886176334179549e-57,
+          "interpretation": "強い関連"
+        },
+        {
+          "relationship": "Q4_interest_vs_Q6_understanding",
+          "correlation": 0.9486078929772475,
+          "p_value": 2.8838590368165086e-50,
+          "interpretation": "強い関連"
+        },
+        {
+          "relationship": "Q5_learning_vs_Q6_understanding",
+          "correlation": 0.9397321428571429,
+          "p_value": 5.290373562099025e-47,
+          "interpretation": "強い関連"
+        }
+      ],
+      "regression_coefficients": {
+        "Q1_total": 0.055144691625786044,
+        "Q3_total": 0.22661844537408393,
+        "Q4_interest": 0.5483053554328298,
+        "Q5_learning": 0.31368661654617513
+      },
+      "educational_implications": [
+        "理解度予測モデルの説明力: R² = 0.914",
+        "学習変数間の関連性から教育効果のメカニズムを推定",
+        "有意な相関関係から重要な学習要因を特定"
+      ],
+      "coefficient_interpretation": [
+        "Q1_total: 0.055 (重要度順位付けの参考)",
+        "Q3_total: 0.227 (重要度順位付けの参考)",
+        "Q4_interest: 0.548 (重要度順位付けの参考)",
+        "Q5_learning: 0.314 (重要度順位付けの参考)"
+      ]
+    }
+  },
+  "educational_implications": {
+    "learning_process_insights": [
+      "学習への積極性（実験興味・新学び）が理解度向上の重要な要因",
+      "授業前の基礎理解度が学習成果に影響を与える可能性",
+      "クラス間差異を考慮した個別指導の重要性"
+    ],
+    "instructional_recommendations": [
+      "実験活動への興味喚起が効果的な学習促進策",
+      "新しい学びへの意識向上が理解度向上に寄与",
+      "基礎知識の確実な定着が発展的学習の基盤"
+    ],
+    "assessment_insights": [
+      "多面的評価による学習プロセスの構造的理解",
+      "潜在的な学習能力の測定方法の重要性",
+      "量的・質的データの統合分析の有効性"
+    ],
+    "methodological_notes": [
+      "独立群比較による構造的関係の推定",
+      "個人追跡データ収集の重要性（今後の改善点）",
+      "因果推論の限界と観察研究の特性"
+    ]
+  }
+}

@@ -1,0 +1,374 @@
+{
+  "metadata": {
+    "analysis_type": "Power Analysis and Statistical Validation",
+    "generated_at": "2025-05-31T15:50:22.209181",
+    "sample_size_before": 99,
+    "sample_size_after": 99
+  },
+  "effect_sizes": {
+    "q1_composite": {
+      "before_mean": 3.242424242424242,
+      "after_mean": 2.9393939393939394,
+      "before_std": 0.9045340337332909,
+      "after_std": 0.9347943331391224,
+      "mean_difference": -0.30303030303030276,
+      "cohens_d": -0.3294564552561943,
+      "mann_whitney_u": 5852.0,
+      "mann_whitney_p": 0.012515542767155293,
+      "effect_size_r": 0.1774728878018681,
+      "sample_size_before": 99,
+      "sample_size_after": 99
+    },
+    "q3_composite": {
+      "before_mean": 0.6565656565656566,
+      "after_mean": 0.7373737373737373,
+      "before_std": 0.574307323005264,
+      "after_std": 0.5455919568550008,
+      "mean_difference": 0.08080808080808077,
+      "cohens_d": 0.14426570535975808,
+      "mann_whitney_u": 4524.5,
+      "mann_whitney_p": 0.2802332173859363,
+      "sample_size_before": 99,
+      "sample_size_after": 99
+    },
+    "categorical": {
+      "Saltwater": {
+        "chi2": 0.2551546391752577,
+        "p_value": 0.613468698019642,
+        "degrees_of_freedom": 1,
+        "cramers_v": 0.0358979079308869,
+        "sample_size": "198",
+        "contingency_table": [
+          [
+            1,
+            98
+          ],
+          [
+            3,
+            96
+          ]
+        ]
+      },
+      "Sugarwater": {
+        "chi2": 0.0,
+        "p_value": 1.0,
+        "degrees_of_freedom": 1,
+        "cramers_v": 0.0,
+        "sample_size": "198",
+        "contingency_table": [
+          [
+            4,
+            95
+          ],
+          [
+            3,
+            96
+          ]
+        ]
+      },
+      "Muddywater": {
+        "chi2": 1.8264307228915664,
+        "p_value": 0.1765497130906381,
+        "degrees_of_freedom": 1,
+        "cramers_v": 0.09604372749097906,
+        "sample_size": "198",
+        "contingency_table": [
+          [
+            79,
+            20
+          ],
+          [
+            87,
+            12
+          ]
+        ]
+      },
+      "Ink": {
+        "chi2": 2.7446393762183234,
+        "p_value": 0.09758109011152417,
+        "degrees_of_freedom": 1,
+        "cramers_v": 0.11773620951689279,
+        "sample_size": "198",
+        "contingency_table": [
+          [
+            81,
+            18
+          ],
+          [
+            90,
+            9
+          ]
+        ]
+      },
+      "MisoSoup": {
+        "chi2": 1.0022727272727272,
+        "p_value": 0.3167611986132855,
+        "degrees_of_freedom": 1,
+        "cramers_v": 0.0711476174659024,
+        "sample_size": "198",
+        "contingency_table": [
+          [
+            51,
+            48
+          ],
+          [
+            59,
+            40
+          ]
+        ]
+      },
+      "SoySauce": {
+        "chi2": 0.18877118644067797,
+        "p_value": 0.663941322108835,
+        "degrees_of_freedom": 1,
+        "cramers_v": 0.030877011359723185,
+        "sample_size": "198",
+        "contingency_table": [
+          [
+            57,
+            42
+          ],
+          [
+            61,
+            38
+          ]
+        ]
+      }
+    }
+  },
+  "power_analysis": {
+    "t_tests": {
+      "Q1_composite": {
+        "effect_size": -0.3294564552561943,
+        "power": 0.9007430770822941,
+        "sample_size_before": 99,
+        "sample_size_after": 99,
+        "interpretation": "十分な検出力"
+      },
+      "Q3_composite": {
+        "effect_size": 0.14426570535975808,
+        "power": 0.29544466138813286,
+        "sample_size_before": 99,
+        "sample_size_after": 99,
+        "interpretation": "検出力不足"
+      }
+    },
+    "chi2_tests": {
+      "Saltwater": {
+        "cramers_v": 0.0358979079308869,
+        "cohens_w": 0.0358979079308869,
+        "power": 0.07970628132330315,
+        "sample_size": "198",
+        "p_value": 0.613468698019642,
+        "interpretation": "検出力不足"
+      },
+      "Sugarwater": {
+        "cramers_v": 0.0,
+        "cohens_w": 0.0,
+        "power": 0.05000000000000004,
+        "sample_size": "198",
+        "p_value": 1.0,
+        "interpretation": "検出力不足"
+      },
+      "Muddywater": {
+        "cramers_v": 0.09604372749097906,
+        "cohens_w": 0.09604372749097906,
+        "power": 0.2718891079446484,
+        "sample_size": "198",
+        "p_value": 0.1765497130906381,
+        "interpretation": "検出力不足"
+      },
+      "Ink": {
+        "cramers_v": 0.11773620951689279,
+        "cohens_w": 0.11773620951689279,
+        "power": 0.38099177624931263,
+        "sample_size": "198",
+        "p_value": 0.09758109011152417,
+        "interpretation": "検出力不足"
+      },
+      "MisoSoup": {
+        "cramers_v": 0.0711476174659024,
+        "cohens_w": 0.0711476174659024,
+        "power": 0.17035534700521407,
+        "sample_size": "198",
+        "p_value": 0.3167611986132855,
+        "interpretation": "検出力不足"
+      },
+      "SoySauce": {
+        "cramers_v": 0.030877011359723185,
+        "cohens_w": 0.030877011359723185,
+        "power": 0.07189180796977068,
+        "sample_size": "198",
+        "p_value": 0.663941322108835,
+        "interpretation": "検出力不足"
+      }
+    },
+    "correlation_tests": {
+      "Q1_total_vs_Q4_ExperimentInterestRating": {
+        "correlation": -0.012294391273769693,
+        "p_value": 0.9038663925742297,
+        "power": 0.05168255582932572,
+        "sample_size": 99,
+        "interpretation": "検出力不足"
+      },
+      "Q1_total_vs_Q6_DissolvingUnderstandingRating": {
+        "correlation": 0.03232621345646782,
+        "p_value": 0.7507581255418927,
+        "power": 0.06170015892401006,
+        "sample_size": 99,
+        "interpretation": "検出力不足"
+      },
+      "Q4_ExperimentInterestRating_vs_Q5_NewLearningsRating": {
+        "correlation": 0.9634048212082399,
+        "p_value": 2.886176334179549e-57,
+        "power": 0.9999999999999745,
+        "sample_size": 99,
+        "interpretation": "十分な検出力"
+      },
+      "Q5_NewLearningsRating_vs_Q6_DissolvingUnderstandingRating": {
+        "correlation": 0.9397321428571429,
+        "p_value": 5.290373562099025e-47,
+        "power": 0.9999999999998521,
+        "sample_size": 99,
+        "interpretation": "十分な検出力"
+      }
+    }
+  },
+  "sample_size_recommendations": {
+    "effect_size_0.2": {
+      "effect_size": 0.2,
+      "effect_interpretation": "小効果",
+      "t_test_n_per_group": 198.15082095521652,
+      "chi2_test_n_total": 196.2215127355966,
+      "correlation_n_total": 198.15082095521652,
+      "power": 0.8,
+      "alpha": 0.05
+    },
+    "effect_size_0.5": {
+      "effect_size": 0.5,
+      "effect_interpretation": "中効果",
+      "t_test_n_per_group": 33.36713118431778,
+      "chi2_test_n_total": 31.395442038122646,
+      "correlation_n_total": 33.36713118431778,
+      "power": 0.8,
+      "alpha": 0.05
+    },
+    "effect_size_0.8": {
+      "effect_size": 0.8,
+      "effect_interpretation": "大効果",
+      "t_test_n_per_group": 14.302764558117468,
+      "chi2_test_n_total": 12.263847027781765,
+      "correlation_n_total": 14.302764558117468,
+      "power": 0.8,
+      "alpha": 0.05
+    }
+  },
+  "bootstrap_analysis": {
+    "q1_composite": {
+      "observed_difference": -0.30303030303030276,
+      "bootstrap_mean": -0.3018585858585859,
+      "bootstrap_std": 0.12968003287883753,
+      "ci_95_lower": -0.5454545454545454,
+      "ci_95_upper": -0.04040404040404065,
+      "n_bootstrap": 1000,
+      "significant": true
+    },
+    "q3_composite": {
+      "observed_difference": 0.08080808080808077,
+      "bootstrap_mean": 0.08320202020202021,
+      "bootstrap_std": 0.07709845734703995,
+      "ci_95_lower": -0.0505050505050505,
+      "ci_95_upper": 0.24242424242424238,
+      "n_bootstrap": 1000,
+      "significant": false
+    }
+  },
+  "recommendations": {
+    "current_analysis_evaluation": {
+      "strengths": [
+        "適切な独立群比較設計の採用",
+        "多重比較補正の実施",
+        "効果量の報告",
+        "非パラメトリック検定の併用"
+      ],
+      "limitations": [
+        "限定的なサンプルサイズ（N=99, 99）",
+        "一部検定での検出力不足",
+        "個人追跡不可による制約",
+        "観察研究としての因果推論の限界"
+      ],
+      "power_summary": {
+        "t_tests": {
+          "mean_power": 0.5980938692352135,
+          "adequate_power_count": 1,
+          "total_tests": 2
+        }
+      }
+    },
+    "future_study_design": {
+      "recommended_sample_size": {
+        "target_effect_size": 0.5,
+        "recommended_n_per_group": 33.36713118431778,
+        "current_n_per_group": 99,
+        "improvement_needed": false
+      },
+      "design_improvements": [
+        "個人識別可能なデータ収集システム導入",
+        "ランダム割付による実験デザイン",
+        "統制群の設定",
+        "長期追跡調査の実施",
+        "多変量調整による交絡制御"
+      ],
+      "data_collection_enhancements": [
+        "より詳細な背景変数収集",
+        "テキストデータの体系的収集",
+        "授業実施条件の標準化",
+        "教師要因の統制・測定"
+      ],
+      "analysis_strategy": [
+        "階層線形モデル（HLM）の適用",
+        "傾向スコアマッチング",
+        "構造方程式モデリングの発展",
+        "機械学習手法との統合"
+      ]
+    },
+    "statistical_best_practices": {
+      "effect_size_reporting": [
+        "すべての検定で効果量を報告",
+        "実質的意味のある効果サイズの閾値設定",
+        "信頼区間の併記"
+      ],
+      "multiple_testing": [
+        "事前の検定計画立案",
+        "適切な多重比較補正法選択",
+        "探索的分析と確認的分析の区別"
+      ],
+      "model_validation": [
+        "統計的前提条件の確認",
+        "ロバスト性チェック",
+        "感度分析の実施"
+      ]
+    },
+    "reporting_guidelines": {
+      "required_elements": [
+        "サンプルサイズとその根拠",
+        "効果量と信頼区間",
+        "検出力または検出力分析結果",
+        "多重比較補正の詳細",
+        "分析の限界と解釈上の注意"
+      ],
+      "transparency_measures": [
+        "事前分析計画の公開",
+        "データの利用可能性",
+        "分析コードの共有",
+        "結果の再現性確保"
+      ],
+      "interpretation_cautions": [
+        "因果推論の限界明記",
+        "一般化可能性の検討",
+        "実践的意義の評価",
+        "統計的有意性と実質的意義の区別"
+      ]
+    }
+  }
+}

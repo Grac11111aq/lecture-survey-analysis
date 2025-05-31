@@ -1,0 +1,240 @@
+{
+  "metadata": {
+    "analysis_type": "Machine Learning Prediction",
+    "generated_at": "2025-05-31T15:44:12.449572",
+    "sample_size": 99,
+    "features_used": [
+      "Q1_total",
+      "Q3_total",
+      "Q4_ExperimentInterestRating",
+      "Q5_NewLearningsRating",
+      "class_1.0",
+      "class_2.0",
+      "class_3.0",
+      "class_4.0"
+    ],
+    "target_variable": "Q6_DissolvingUnderstandingRating"
+  },
+  "model_performance": {
+    "RandomForest": {
+      "cv_accuracy_mean": 0.7568421052631578,
+      "cv_accuracy_std": 0.053092716685972624,
+      "cv_f1_mean": 0.7351281540732343,
+      "cv_f1_std": 0.05050221585205368,
+      "final_accuracy": 0.8787878787878788,
+      "final_f1": 0.8809893809893808
+    },
+    "LogisticRegression": {
+      "cv_accuracy_mean": 0.7068421052631579,
+      "cv_accuracy_std": 0.0387691512856903,
+      "cv_f1_mean": 0.7114168722200758,
+      "cv_f1_std": 0.028858322982150488,
+      "final_accuracy": 0.8282828282828283,
+      "final_f1": 0.8321650397122096
+    }
+  },
+  "feature_analysis": {
+    "RandomForest": [
+      {
+        "feature": "Q4_ExperimentInterestRating",
+        "importance": 0.2742236125368139
+      },
+      {
+        "feature": "Q5_NewLearningsRating",
+        "importance": 0.23997580659333953
+      },
+      {
+        "feature": "class_2.0",
+        "importance": 0.13994644521676583
+      },
+      {
+        "feature": "Q3_total",
+        "importance": 0.1323427778166128
+      },
+      {
+        "feature": "Q1_total",
+        "importance": 0.08699121270686072
+      },
+      {
+        "feature": "class_1.0",
+        "importance": 0.048272233409430196
+      },
+      {
+        "feature": "class_4.0",
+        "importance": 0.0418500033208028
+      },
+      {
+        "feature": "class_3.0",
+        "importance": 0.036397908399374186
+      }
+    ],
+    "LogisticRegression_coefficients": [
+      {
+        "feature": "class_2.0",
+        "coefficient": 1.3049942849472556
+      },
+      {
+        "feature": "Q4_ExperimentInterestRating",
+        "coefficient": 1.2675610520276042
+      },
+      {
+        "feature": "Q5_NewLearningsRating",
+        "coefficient": 0.8345696606616761
+      },
+      {
+        "feature": "class_4.0",
+        "coefficient": 0.6723946073692065
+      },
+      {
+        "feature": "Q3_total",
+        "coefficient": 0.6018842643228709
+      },
+      {
+        "feature": "class_1.0",
+        "coefficient": 0.5184641465646594
+      },
+      {
+        "feature": "class_3.0",
+        "coefficient": 0.4374038389143412
+      },
+      {
+        "feature": "Q1_total",
+        "coefficient": 0.2714601484068079
+      }
+    ]
+  },
+  "interpretations": {
+    "model_performance": {
+      "best_model": "RandomForest",
+      "best_f1_score": 0.7351281540732343,
+      "best_accuracy": 0.7568421052631578,
+      "performance_level": "良好",
+      "model_reliability": "安定",
+      "practical_utility": "参考指標として有用"
+    },
+    "feature_insights": {
+      "most_important_features": [
+        {
+          "feature": "Q4_ExperimentInterestRating",
+          "importance": 0.2742236125368139,
+          "interpretation": "実験活動への興味・関心度（学習動機）"
+        },
+        {
+          "feature": "Q5_NewLearningsRating",
+          "importance": 0.23997580659333953,
+          "interpretation": "新しい学びへの自覚度（メタ認知）"
+        },
+        {
+          "feature": "class_2.0",
+          "importance": 0.13994644521676583,
+          "interpretation": "クラス2の特徴（指導環境・集団特性）"
+        }
+      ],
+      "learning_factors": [
+        {
+          "feature": "Q4_ExperimentInterestRating",
+          "importance": 0.2742236125368139
+        },
+        {
+          "feature": "Q5_NewLearningsRating",
+          "importance": 0.23997580659333953
+        }
+      ],
+      "class_effects": [
+        {
+          "feature": "class_2.0",
+          "importance": 0.13994644521676583
+        },
+        {
+          "feature": "class_1.0",
+          "importance": 0.048272233409430196
+        },
+        {
+          "feature": "class_4.0",
+          "importance": 0.0418500033208028
+        },
+        {
+          "feature": "class_3.0",
+          "importance": 0.036397908399374186
+        }
+      ]
+    },
+    "educational_implications": {
+      "instruction_strategies": [
+        "実験活動への興味喚起が理解度向上の鍵となる要因",
+        "基礎概念の確実な理解が発展的学習の基盤",
+        "新しい学びへの自覚を促すメタ認知支援の重要性",
+        "クラス特性を考慮した個別化指導の必要性"
+      ],
+      "assessment_insights": [
+        "理解度予測における複合的要因の重要性",
+        "学習動機と認知要因の相互作用",
+        "量的指標による学習成果の客観的評価の可能性"
+      ],
+      "curriculum_design": [
+        "段階的な概念形成を支援する教材開発",
+        "実験と理論の効果的な統合方法",
+        "個人差に対応した多様な学習支援策"
+      ]
+    },
+    "methodological_notes": {
+      "sample_size_limitations": [
+        "限定的なサンプルサイズ（N=99）による予測精度の制約",
+        "交差検証による汎化性能の評価の重要性",
+        "追加データ収集による予測モデル改善の必要性"
+      ],
+      "feature_engineering": [
+        "現在の特徴量設計の妥当性と改善可能性",
+        "テキストデータ等の質的情報の活用検討",
+        "時系列要素（授業前後変化）の将来的な組み込み"
+      ],
+      "model_interpretability": [
+        "教育現場での解釈可能性を重視したモデル選択",
+        "特徴量重要度の教育学的意味の継続的検証",
+        "予測結果の教育実践への適用における注意点"
+      ]
+    }
+  },
+  "models_summary": {
+    "RandomForest": {
+      "cross_validation_accuracy": [
+        0.8,
+        0.7,
+        0.8,
+        0.8,
+        0.6842105263157895
+      ],
+      "cross_validation_f1": [
+        0.7551839464882943,
+        0.7278571428571429,
+        0.8,
+        0.7466666666666667,
+        0.645933014354067
+      ],
+      "final_metrics": {
+        "accuracy": 0.8787878787878788,
+        "f1_weighted": 0.8809893809893808
+      }
+    },
+    "LogisticRegression": {
+      "cross_validation_accuracy": [
+        0.65,
+        0.7,
+        0.75,
+        0.75,
+        0.6842105263157895
+      ],
+      "cross_validation_f1": [
+        0.6917748917748916,
+        0.7278571428571429,
+        0.7375776397515528,
+        0.7357142857142857,
+        0.6641604010025063
+      ],
+      "final_metrics": {
+        "accuracy": 0.8282828282828283,
+        "f1_weighted": 0.8321650397122096
+      }
+    }
+  }
+}
