@@ -1,0 +1,429 @@
+{
+  "chi_square_analysis": {
+    "q1_results": {
+      "Saltwater": {
+        "before_n": 99,
+        "after_n": 99,
+        "before_true_rate": 0.98989898989899,
+        "after_true_rate": 0.9696969696969697,
+        "difference": -0.02020202020202022,
+        "contingency_table": [
+          [
+            1,
+            98
+          ],
+          [
+            3,
+            96
+          ]
+        ],
+        "test_type": "Fisher's exact",
+        "test_statistic": 0.32653061224489793,
+        "p_value": 0.6211636079656384,
+        "significant": "False",
+        "cohens_h": -0.14859058423022553,
+        "cramers_v": null,
+        "interpretation": "有意差なし, 効果なし/小"
+      },
+      "Sugarwater": {
+        "before_n": 99,
+        "after_n": 99,
+        "before_true_rate": 0.9595959595959596,
+        "after_true_rate": 0.9696969696969697,
+        "difference": 0.010101010101010166,
+        "contingency_table": [
+          [
+            4,
+            95
+          ],
+          [
+            3,
+            96
+          ]
+        ],
+        "test_type": "Fisher's exact",
+        "test_statistic": 1.3473684210526315,
+        "p_value": 1.0,
+        "significant": false,
+        "cohens_h": 0.054834645982241526,
+        "cramers_v": null,
+        "interpretation": "有意差なし, 効果なし/小"
+      },
+      "Muddywater": {
+        "before_n": 99,
+        "after_n": 99,
+        "before_true_rate": 0.20202020202020202,
+        "after_true_rate": 0.12121212121212122,
+        "difference": -0.0808080808080808,
+        "contingency_table": [
+          [
+            79,
+            20
+          ],
+          [
+            87,
+            12
+          ]
+        ],
+        "test_type": "Chi-square",
+        "test_statistic": 1.8264307228915664,
+        "p_value": 0.1765497130906381,
+        "significant": "False",
+        "cohens_h": -0.22113104909198578,
+        "cramers_v": 0.09604372749097906,
+        "interpretation": "有意差なし, 中程度の効果"
+      },
+      "Ink": {
+        "before_n": 99,
+        "after_n": 99,
+        "before_true_rate": 0.18181818181818182,
+        "after_true_rate": 0.09090909090909091,
+        "difference": -0.09090909090909091,
+        "contingency_table": [
+          [
+            81,
+            18
+          ],
+          [
+            90,
+            9
+          ]
+        ],
+        "test_type": "Chi-square",
+        "test_statistic": 2.7446393762183234,
+        "p_value": 0.09758109011152417,
+        "significant": "False",
+        "cohens_h": -0.26846658767005804,
+        "cramers_v": 0.11773620951689279,
+        "interpretation": "有意差なし, 中程度の効果"
+      },
+      "MisoSoup": {
+        "before_n": 99,
+        "after_n": 99,
+        "before_true_rate": 0.48484848484848486,
+        "after_true_rate": 0.40404040404040403,
+        "difference": -0.08080808080808083,
+        "contingency_table": [
+          [
+            51,
+            48
+          ],
+          [
+            59,
+            40
+          ]
+        ],
+        "test_type": "Chi-square",
+        "test_statistic": 1.0022727272727272,
+        "p_value": 0.3167611986132855,
+        "significant": "False",
+        "cohens_h": -0.16280964809095355,
+        "cramers_v": 0.0711476174659024,
+        "interpretation": "有意差なし, 効果なし/小"
+      },
+      "SoySauce": {
+        "before_n": 99,
+        "after_n": 99,
+        "before_true_rate": 0.42424242424242425,
+        "after_true_rate": 0.3838383838383838,
+        "difference": -0.04040404040404044,
+        "contingency_table": [
+          [
+            57,
+            42
+          ],
+          [
+            61,
+            38
+          ]
+        ],
+        "test_type": "Chi-square",
+        "test_statistic": 0.18877118644067797,
+        "p_value": 0.663941322108835,
+        "significant": "False",
+        "cohens_h": -0.08236464977780344,
+        "cramers_v": 0.030877011359723185,
+        "interpretation": "有意差なし, 効果なし/小"
+      }
+    },
+    "q3_results": {
+      "TeaLeavesDissolve": {
+        "before_n": 99,
+        "after_n": 99,
+        "before_true_rate": 0.08080808080808081,
+        "after_true_rate": 0.06060606060606061,
+        "difference": -0.020202020202020207,
+        "contingency_table": [
+          [
+            91,
+            8
+          ],
+          [
+            93,
+            6
+          ]
+        ],
+        "test_type": "Chi-square",
+        "test_statistic": 0.07686335403726707,
+        "p_value": 0.7815939767559904,
+        "significant": "False",
+        "cohens_h": -0.07900479801523574,
+        "cramers_v": 0.019702760155977515,
+        "interpretation": "有意差なし, 効果なし/小"
+      },
+      "TeaComponentsDissolve": {
+        "before_n": 99,
+        "after_n": 99,
+        "before_true_rate": 0.5757575757575758,
+        "after_true_rate": 0.6767676767676768,
+        "difference": 0.101010101010101,
+        "contingency_table": [
+          [
+            42,
+            57
+          ],
+          [
+            32,
+            67
+          ]
+        ],
+        "test_type": "Chi-square",
+        "test_statistic": 1.7478204010462073,
+        "p_value": 0.18615097308787856,
+        "significant": "False",
+        "cohens_h": 0.20924689986418787,
+        "cramers_v": 0.09395411519917386,
+        "interpretation": "有意差なし, 中程度の効果"
+      }
+    },
+    "summary": {},
+    "multiple_testing": {
+      "n_tests": 8,
+      "method": "Benjamini-Hochberg (FDR)",
+      "corrected_results": {
+        "q1_results_Saltwater": {
+          "original_p": 0.6211636079656384,
+          "fdr_adjusted_p": 0.8852550961451134,
+          "bonferroni_p": 1.0,
+          "fdr_significant": "False",
+          "bonferroni_significant": "False"
+        },
+        "q1_results_Sugarwater": {
+          "original_p": 1.0,
+          "fdr_adjusted_p": 1.0,
+          "bonferroni_p": 1.0,
+          "fdr_significant": "False",
+          "bonferroni_significant": "False"
+        },
+        "q1_results_Muddywater": {
+          "original_p": 0.1765497130906381,
+          "fdr_adjusted_p": 0.4964025949010095,
+          "bonferroni_p": 1.0,
+          "fdr_significant": "False",
+          "bonferroni_significant": "False"
+        },
+        "q1_results_Ink": {
+          "original_p": 0.09758109011152417,
+          "fdr_adjusted_p": 0.4964025949010095,
+          "bonferroni_p": 0.7806487208921934,
+          "fdr_significant": "False",
+          "bonferroni_significant": "False"
+        },
+        "q1_results_MisoSoup": {
+          "original_p": 0.3167611986132855,
+          "fdr_adjusted_p": 0.633522397226571,
+          "bonferroni_p": 1.0,
+          "fdr_significant": "False",
+          "bonferroni_significant": "False"
+        },
+        "q1_results_SoySauce": {
+          "original_p": 0.663941322108835,
+          "fdr_adjusted_p": 0.8852550961451134,
+          "bonferroni_p": 1.0,
+          "fdr_significant": "False",
+          "bonferroni_significant": "False"
+        },
+        "q3_results_TeaLeavesDissolve": {
+          "original_p": 0.7815939767559904,
+          "fdr_adjusted_p": 0.8932502591497034,
+          "bonferroni_p": 1.0,
+          "fdr_significant": "False",
+          "bonferroni_significant": "False"
+        },
+        "q3_results_TeaComponentsDissolve": {
+          "original_p": 0.18615097308787856,
+          "fdr_adjusted_p": 0.4964025949010095,
+          "bonferroni_p": 1.0,
+          "fdr_significant": "False",
+          "bonferroni_significant": "False"
+        }
+      }
+    }
+  },
+  "mann_whitney_analysis": {
+    "Q4_ExperimentInterestRating": {
+      "variable": "Q4_ExperimentInterestRating",
+      "label": "実験への興味",
+      "n_total": 99,
+      "class_statistics": {
+        "1.0": {
+          "n": 24,
+          "mean": 3.875,
+          "median": 4.0,
+          "std": 0.6123724356957945,
+          "min": 1.0,
+          "max": 4.0
+        },
+        "2.0": {
+          "n": 26,
+          "mean": 1.0,
+          "median": 1.0,
+          "std": 0.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "3.0": {
+          "n": 24,
+          "mean": 3.7083333333333335,
+          "median": 4.0,
+          "std": 0.6902530516863499,
+          "min": 1.0,
+          "max": 4.0
+        },
+        "4.0": {
+          "n": 25,
+          "mean": 3.88,
+          "median": 4.0,
+          "std": 0.439696865275764,
+          "min": 2.0,
+          "max": 4.0
+        }
+      },
+      "test_type": "Kruskal-Wallis",
+      "h_statistic": 78.4298788294467,
+      "p_value": 6.664754932403817e-17,
+      "significant": "True",
+      "interpretation": "クラス間に極めて有意な差"
+    },
+    "Q5_NewLearningsRating": {
+      "variable": "Q5_NewLearningsRating",
+      "label": "新しい学び",
+      "n_total": 99,
+      "class_statistics": {
+        "1.0": {
+          "n": 24,
+          "mean": 3.75,
+          "median": 4.0,
+          "std": 0.531609533071195,
+          "min": 2.0,
+          "max": 4.0
+        },
+        "2.0": {
+          "n": 26,
+          "mean": 1.0,
+          "median": 1.0,
+          "std": 0.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "3.0": {
+          "n": 24,
+          "mean": 3.7083333333333335,
+          "median": 4.0,
+          "std": 0.5500329370901873,
+          "min": 2.0,
+          "max": 4.0
+        },
+        "4.0": {
+          "n": 25,
+          "mean": 3.8,
+          "median": 4.0,
+          "std": 0.408248290463863,
+          "min": 3.0,
+          "max": 4.0
+        }
+      },
+      "test_type": "Kruskal-Wallis",
+      "h_statistic": 72.32200880516969,
+      "p_value": 1.3581126058248965e-15,
+      "significant": "True",
+      "interpretation": "クラス間に極めて有意な差"
+    },
+    "Q6_DissolvingUnderstandingRating": {
+      "variable": "Q6_DissolvingUnderstandingRating",
+      "label": "溶解理解度",
+      "n_total": 99,
+      "class_statistics": {
+        "1.0": {
+          "n": 24,
+          "mean": 3.6666666666666665,
+          "median": 4.0,
+          "std": 0.48154341234307685,
+          "min": 3.0,
+          "max": 4.0
+        },
+        "2.0": {
+          "n": 26,
+          "mean": 1.0,
+          "median": 1.0,
+          "std": 0.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "3.0": {
+          "n": 24,
+          "mean": 3.5833333333333335,
+          "median": 4.0,
+          "std": 0.7755316082290385,
+          "min": 1.0,
+          "max": 4.0
+        },
+        "4.0": {
+          "n": 25,
+          "mean": 3.76,
+          "median": 4.0,
+          "std": 0.5228129047119374,
+          "min": 2.0,
+          "max": 4.0
+        }
+      },
+      "test_type": "Kruskal-Wallis",
+      "h_statistic": 67.8827079835044,
+      "p_value": 1.2121012235519894e-14,
+      "significant": "True",
+      "interpretation": "クラス間に極めて有意な差"
+    }
+  },
+  "composite_analysis": {
+    "q1_composite": {
+      "before_n": 99,
+      "after_n": 99,
+      "before_mean": 3.242424242424242,
+      "after_mean": 2.9393939393939394,
+      "before_std": 0.9045340337332909,
+      "after_std": 0.9347943331391224,
+      "mean_difference": -0.30303030303030276,
+      "u_statistic": 5852.0,
+      "p_value": 0.012515542767155293,
+      "effect_size_r": 0.1774728878018681,
+      "cohens_d": -0.3294564552561943,
+      "significant": "True",
+      "interpretation": "有意な差, 中程度の効果"
+    },
+    "q3_composite": {
+      "before_n": 99,
+      "after_n": 99,
+      "before_mean": 0.6565656565656566,
+      "after_mean": 0.7373737373737373,
+      "before_std": 0.574307323005264,
+      "after_std": 0.5455919568550008,
+      "mean_difference": 0.08080808080808077,
+      "u_statistic": 4524.5,
+      "p_value": 0.2802332173859363,
+      "effect_size_r": 0.07673773078955527,
+      "cohens_d": 0.14426570535975808,
+      "significant": "False",
+      "interpretation": "有意差なし, 効果なし/小"
+    }
+  }
+}

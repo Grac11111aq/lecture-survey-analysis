@@ -1,0 +1,2184 @@
+{
+  "metadata": {
+    "title": "小学校出前授業アンケート分析 最終統合レポート",
+    "subtitle": "独立群比較による効果検証",
+    "generated_at": "2025-05-31T14:58:27.364174",
+    "analysis_type": "独立群比較分析",
+    "note": "Page_IDによる個人追跡は不可能であることを前提とした分析"
+  },
+  "executive_summary": {
+    "analysis_type": "独立群比較分析",
+    "sample_size": {
+      "before_group": 99,
+      "after_group": 99
+    },
+    "key_findings": [],
+    "statistical_significance": [],
+    "limitations": [
+      "Page_IDは個人識別子ではないため個人追跡不可能",
+      "独立群比較のため個人レベルの変化は測定不可",
+      "因果推論には限界がある（ランダム割付なし）",
+      "授業効果以外の要因による群間差の可能性"
+    ],
+    "chi2_summary": {
+      "total_tests": 8,
+      "significant_results": 0,
+      "largest_effect": {
+        "item": "Ink",
+        "effect_size": 0.26846658767005804
+      }
+    },
+    "mannwhitney_summary": {
+      "total_tests": 5,
+      "significant_results": 5,
+      "largest_effect": {
+        "item": "q1_composite",
+        "effect_size": 0.3294564552561943
+      }
+    }
+  },
+  "methodology": {
+    "data_structure": {
+      "description": "Page_IDは個人識別子ではなく単なるページ番号",
+      "analysis_approach": "独立群比較",
+      "sample_sizes": {
+        "before_group": 99,
+        "after_group": 99
+      }
+    },
+    "statistical_methods": {
+      "chi_square": "カテゴリカルデータの独立性検定",
+      "mann_whitney_u": "順序尺度データの独立2群比較",
+      "kruskal_wallis": "クラス間比較（授業後データ）",
+      "effect_sizes": [
+        "Cohen's h",
+        "Cohen's d",
+        "η²"
+      ]
+    },
+    "multiple_comparison_correction": {
+      "fdr": "False Discovery Rate補正",
+      "bonferroni": "Bonferroni補正"
+    }
+  },
+  "results": {
+    "basic_statistics": {
+      "q1_analysis": {
+        "before": {
+          "Saltwater": {
+            "true_rate": 98.98989898989899,
+            "count": 98,
+            "total": 99
+          },
+          "Sugarwater": {
+            "true_rate": 95.95959595959596,
+            "count": 95,
+            "total": 99
+          },
+          "Muddywater": {
+            "true_rate": 20.2020202020202,
+            "count": 20,
+            "total": 99
+          },
+          "Ink": {
+            "true_rate": 18.181818181818183,
+            "count": 18,
+            "total": 99
+          },
+          "MisoSoup": {
+            "true_rate": 48.484848484848484,
+            "count": 48,
+            "total": 99
+          },
+          "SoySauce": {
+            "true_rate": 42.42424242424242,
+            "count": 42,
+            "total": 99
+          }
+        },
+        "after": {
+          "Saltwater": {
+            "true_rate": 96.96969696969697,
+            "count": 96,
+            "total": 99
+          },
+          "Sugarwater": {
+            "true_rate": 96.96969696969697,
+            "count": 96,
+            "total": 99
+          },
+          "Muddywater": {
+            "true_rate": 12.121212121212121,
+            "count": 12,
+            "total": 99
+          },
+          "Ink": {
+            "true_rate": 9.090909090909092,
+            "count": 9,
+            "total": 99
+          },
+          "MisoSoup": {
+            "true_rate": 40.4040404040404,
+            "count": 40,
+            "total": 99
+          },
+          "SoySauce": {
+            "true_rate": 38.38383838383838,
+            "count": 38,
+            "total": 99
+          }
+        },
+        "comparison": {
+          "Saltwater": {
+            "before_rate": 98.98989898989899,
+            "after_rate": 96.96969696969697,
+            "change": -2.0202020202020208,
+            "change_direction": "decrease"
+          },
+          "Sugarwater": {
+            "before_rate": 95.95959595959596,
+            "after_rate": 96.96969696969697,
+            "change": 1.0101010101010104,
+            "change_direction": "increase"
+          },
+          "Muddywater": {
+            "before_rate": 20.2020202020202,
+            "after_rate": 12.121212121212121,
+            "change": -8.08080808080808,
+            "change_direction": "decrease"
+          },
+          "Ink": {
+            "before_rate": 18.181818181818183,
+            "after_rate": 9.090909090909092,
+            "change": -9.090909090909092,
+            "change_direction": "decrease"
+          },
+          "MisoSoup": {
+            "before_rate": 48.484848484848484,
+            "after_rate": 40.4040404040404,
+            "change": -8.080808080808083,
+            "change_direction": "decrease"
+          },
+          "SoySauce": {
+            "before_rate": 42.42424242424242,
+            "after_rate": 38.38383838383838,
+            "change": -4.0404040404040416,
+            "change_direction": "decrease"
+          }
+        }
+      },
+      "q3_analysis": {
+        "before": {
+          "TeaLeavesDissolve": {
+            "true_rate": 8.080808080808081,
+            "count": 8,
+            "total": 99
+          },
+          "TeaComponentsDissolve": {
+            "true_rate": 57.57575757575758,
+            "count": 57,
+            "total": 99
+          }
+        },
+        "after": {
+          "TeaLeavesDissolve": {
+            "true_rate": 6.0606060606060606,
+            "count": 6,
+            "total": 99
+          },
+          "TeaComponentsDissolve": {
+            "true_rate": 67.67676767676768,
+            "count": 67,
+            "total": 99
+          }
+        },
+        "comparison": {
+          "TeaLeavesDissolve": {
+            "before_rate": 8.080808080808081,
+            "after_rate": 6.0606060606060606,
+            "change": -2.0202020202020208,
+            "change_direction": "decrease"
+          },
+          "TeaComponentsDissolve": {
+            "before_rate": 57.57575757575758,
+            "after_rate": 67.67676767676768,
+            "change": 10.101010101010104,
+            "change_direction": "increase"
+          }
+        }
+      },
+      "evaluation_analysis": {
+        "Q4_ExperimentInterestRating": {
+          "count": 99,
+          "mean": 3.080808080808081,
+          "std": 1.3452620386330298,
+          "median": 4.0,
+          "mode": 4,
+          "distribution": {
+            "1": 28,
+            "2": 1,
+            "3": 5,
+            "4": 65
+          }
+        },
+        "Q5_NewLearningsRating": {
+          "count": 99,
+          "mean": 3.0303030303030303,
+          "std": 1.2893167424406085,
+          "median": 4.0,
+          "mode": 4,
+          "distribution": {
+            "1": 26,
+            "2": 2,
+            "3": 14,
+            "4": 57
+          }
+        },
+        "Q6_DissolvingUnderstandingRating": {
+          "count": 99,
+          "mean": 2.9696969696969697,
+          "std": 1.2893167424406085,
+          "median": 4.0,
+          "mode": 4,
+          "distribution": {
+            "1": 27,
+            "2": 2,
+            "3": 17,
+            "4": 53
+          }
+        }
+      },
+      "class_analysis": {
+        "授業前": {
+          "distribution": {
+            "1.0": 24,
+            "2.0": 26,
+            "3.0": 24,
+            "4.0": 25
+          },
+          "total": 99,
+          "classes": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        "授業後": {
+          "distribution": {
+            "1.0": 24,
+            "2.0": 26,
+            "3.0": 24,
+            "4.0": 25
+          },
+          "total": 99,
+          "classes": [
+            1,
+            2,
+            3,
+            4
+          ]
+        }
+      }
+    },
+    "independent_group_comparison": {
+      "chi_square_analysis": {
+        "q1_results": {
+          "Saltwater": {
+            "before_n": 99,
+            "after_n": 99,
+            "before_true_rate": 0.98989898989899,
+            "after_true_rate": 0.9696969696969697,
+            "difference": -0.02020202020202022,
+            "contingency_table": [
+              [
+                1,
+                98
+              ],
+              [
+                3,
+                96
+              ]
+            ],
+            "test_type": "Fisher's exact",
+            "test_statistic": 0.32653061224489793,
+            "p_value": 0.6211636079656384,
+            "significant": "False",
+            "cohens_h": -0.14859058423022553,
+            "cramers_v": null,
+            "interpretation": "有意差なし, 効果なし/小"
+          },
+          "Sugarwater": {
+            "before_n": 99,
+            "after_n": 99,
+            "before_true_rate": 0.9595959595959596,
+            "after_true_rate": 0.9696969696969697,
+            "difference": 0.010101010101010166,
+            "contingency_table": [
+              [
+                4,
+                95
+              ],
+              [
+                3,
+                96
+              ]
+            ],
+            "test_type": "Fisher's exact",
+            "test_statistic": 1.3473684210526315,
+            "p_value": 1.0,
+            "significant": false,
+            "cohens_h": 0.054834645982241526,
+            "cramers_v": null,
+            "interpretation": "有意差なし, 効果なし/小"
+          },
+          "Muddywater": {
+            "before_n": 99,
+            "after_n": 99,
+            "before_true_rate": 0.20202020202020202,
+            "after_true_rate": 0.12121212121212122,
+            "difference": -0.0808080808080808,
+            "contingency_table": [
+              [
+                79,
+                20
+              ],
+              [
+                87,
+                12
+              ]
+            ],
+            "test_type": "Chi-square",
+            "test_statistic": 1.8264307228915664,
+            "p_value": 0.1765497130906381,
+            "significant": "False",
+            "cohens_h": -0.22113104909198578,
+            "cramers_v": 0.09604372749097906,
+            "interpretation": "有意差なし, 中程度の効果"
+          },
+          "Ink": {
+            "before_n": 99,
+            "after_n": 99,
+            "before_true_rate": 0.18181818181818182,
+            "after_true_rate": 0.09090909090909091,
+            "difference": -0.09090909090909091,
+            "contingency_table": [
+              [
+                81,
+                18
+              ],
+              [
+                90,
+                9
+              ]
+            ],
+            "test_type": "Chi-square",
+            "test_statistic": 2.7446393762183234,
+            "p_value": 0.09758109011152417,
+            "significant": "False",
+            "cohens_h": -0.26846658767005804,
+            "cramers_v": 0.11773620951689279,
+            "interpretation": "有意差なし, 中程度の効果"
+          },
+          "MisoSoup": {
+            "before_n": 99,
+            "after_n": 99,
+            "before_true_rate": 0.48484848484848486,
+            "after_true_rate": 0.40404040404040403,
+            "difference": -0.08080808080808083,
+            "contingency_table": [
+              [
+                51,
+                48
+              ],
+              [
+                59,
+                40
+              ]
+            ],
+            "test_type": "Chi-square",
+            "test_statistic": 1.0022727272727272,
+            "p_value": 0.3167611986132855,
+            "significant": "False",
+            "cohens_h": -0.16280964809095355,
+            "cramers_v": 0.0711476174659024,
+            "interpretation": "有意差なし, 効果なし/小"
+          },
+          "SoySauce": {
+            "before_n": 99,
+            "after_n": 99,
+            "before_true_rate": 0.42424242424242425,
+            "after_true_rate": 0.3838383838383838,
+            "difference": -0.04040404040404044,
+            "contingency_table": [
+              [
+                57,
+                42
+              ],
+              [
+                61,
+                38
+              ]
+            ],
+            "test_type": "Chi-square",
+            "test_statistic": 0.18877118644067797,
+            "p_value": 0.663941322108835,
+            "significant": "False",
+            "cohens_h": -0.08236464977780344,
+            "cramers_v": 0.030877011359723185,
+            "interpretation": "有意差なし, 効果なし/小"
+          }
+        },
+        "q3_results": {
+          "TeaLeavesDissolve": {
+            "before_n": 99,
+            "after_n": 99,
+            "before_true_rate": 0.08080808080808081,
+            "after_true_rate": 0.06060606060606061,
+            "difference": -0.020202020202020207,
+            "contingency_table": [
+              [
+                91,
+                8
+              ],
+              [
+                93,
+                6
+              ]
+            ],
+            "test_type": "Chi-square",
+            "test_statistic": 0.07686335403726707,
+            "p_value": 0.7815939767559904,
+            "significant": "False",
+            "cohens_h": -0.07900479801523574,
+            "cramers_v": 0.019702760155977515,
+            "interpretation": "有意差なし, 効果なし/小"
+          },
+          "TeaComponentsDissolve": {
+            "before_n": 99,
+            "after_n": 99,
+            "before_true_rate": 0.5757575757575758,
+            "after_true_rate": 0.6767676767676768,
+            "difference": 0.101010101010101,
+            "contingency_table": [
+              [
+                42,
+                57
+              ],
+              [
+                32,
+                67
+              ]
+            ],
+            "test_type": "Chi-square",
+            "test_statistic": 1.7478204010462073,
+            "p_value": 0.18615097308787856,
+            "significant": "False",
+            "cohens_h": 0.20924689986418787,
+            "cramers_v": 0.09395411519917386,
+            "interpretation": "有意差なし, 中程度の効果"
+          }
+        },
+        "summary": {},
+        "multiple_testing": {
+          "n_tests": 8,
+          "method": "Benjamini-Hochberg (FDR)",
+          "corrected_results": {
+            "q1_results_Saltwater": {
+              "original_p": 0.6211636079656384,
+              "fdr_adjusted_p": 0.8852550961451134,
+              "bonferroni_p": 1.0,
+              "fdr_significant": "False",
+              "bonferroni_significant": "False"
+            },
+            "q1_results_Sugarwater": {
+              "original_p": 1.0,
+              "fdr_adjusted_p": 1.0,
+              "bonferroni_p": 1.0,
+              "fdr_significant": "False",
+              "bonferroni_significant": "False"
+            },
+            "q1_results_Muddywater": {
+              "original_p": 0.1765497130906381,
+              "fdr_adjusted_p": 0.4964025949010095,
+              "bonferroni_p": 1.0,
+              "fdr_significant": "False",
+              "bonferroni_significant": "False"
+            },
+            "q1_results_Ink": {
+              "original_p": 0.09758109011152417,
+              "fdr_adjusted_p": 0.4964025949010095,
+              "bonferroni_p": 0.7806487208921934,
+              "fdr_significant": "False",
+              "bonferroni_significant": "False"
+            },
+            "q1_results_MisoSoup": {
+              "original_p": 0.3167611986132855,
+              "fdr_adjusted_p": 0.633522397226571,
+              "bonferroni_p": 1.0,
+              "fdr_significant": "False",
+              "bonferroni_significant": "False"
+            },
+            "q1_results_SoySauce": {
+              "original_p": 0.663941322108835,
+              "fdr_adjusted_p": 0.8852550961451134,
+              "bonferroni_p": 1.0,
+              "fdr_significant": "False",
+              "bonferroni_significant": "False"
+            },
+            "q3_results_TeaLeavesDissolve": {
+              "original_p": 0.7815939767559904,
+              "fdr_adjusted_p": 0.8932502591497034,
+              "bonferroni_p": 1.0,
+              "fdr_significant": "False",
+              "bonferroni_significant": "False"
+            },
+            "q3_results_TeaComponentsDissolve": {
+              "original_p": 0.18615097308787856,
+              "fdr_adjusted_p": 0.4964025949010095,
+              "bonferroni_p": 1.0,
+              "fdr_significant": "False",
+              "bonferroni_significant": "False"
+            }
+          }
+        }
+      },
+      "mann_whitney_analysis": {
+        "Q4_ExperimentInterestRating": {
+          "variable": "Q4_ExperimentInterestRating",
+          "label": "実験への興味",
+          "n_total": 99,
+          "class_statistics": {
+            "1.0": {
+              "n": 24,
+              "mean": 3.875,
+              "median": 4.0,
+              "std": 0.6123724356957945,
+              "min": 1.0,
+              "max": 4.0
+            },
+            "2.0": {
+              "n": 26,
+              "mean": 1.0,
+              "median": 1.0,
+              "std": 0.0,
+              "min": 1.0,
+              "max": 1.0
+            },
+            "3.0": {
+              "n": 24,
+              "mean": 3.7083333333333335,
+              "median": 4.0,
+              "std": 0.6902530516863499,
+              "min": 1.0,
+              "max": 4.0
+            },
+            "4.0": {
+              "n": 25,
+              "mean": 3.88,
+              "median": 4.0,
+              "std": 0.439696865275764,
+              "min": 2.0,
+              "max": 4.0
+            }
+          },
+          "test_type": "Kruskal-Wallis",
+          "h_statistic": 78.4298788294467,
+          "p_value": 6.664754932403817e-17,
+          "significant": "True",
+          "interpretation": "クラス間に極めて有意な差"
+        },
+        "Q5_NewLearningsRating": {
+          "variable": "Q5_NewLearningsRating",
+          "label": "新しい学び",
+          "n_total": 99,
+          "class_statistics": {
+            "1.0": {
+              "n": 24,
+              "mean": 3.75,
+              "median": 4.0,
+              "std": 0.531609533071195,
+              "min": 2.0,
+              "max": 4.0
+            },
+            "2.0": {
+              "n": 26,
+              "mean": 1.0,
+              "median": 1.0,
+              "std": 0.0,
+              "min": 1.0,
+              "max": 1.0
+            },
+            "3.0": {
+              "n": 24,
+              "mean": 3.7083333333333335,
+              "median": 4.0,
+              "std": 0.5500329370901873,
+              "min": 2.0,
+              "max": 4.0
+            },
+            "4.0": {
+              "n": 25,
+              "mean": 3.8,
+              "median": 4.0,
+              "std": 0.408248290463863,
+              "min": 3.0,
+              "max": 4.0
+            }
+          },
+          "test_type": "Kruskal-Wallis",
+          "h_statistic": 72.32200880516969,
+          "p_value": 1.3581126058248965e-15,
+          "significant": "True",
+          "interpretation": "クラス間に極めて有意な差"
+        },
+        "Q6_DissolvingUnderstandingRating": {
+          "variable": "Q6_DissolvingUnderstandingRating",
+          "label": "溶解理解度",
+          "n_total": 99,
+          "class_statistics": {
+            "1.0": {
+              "n": 24,
+              "mean": 3.6666666666666665,
+              "median": 4.0,
+              "std": 0.48154341234307685,
+              "min": 3.0,
+              "max": 4.0
+            },
+            "2.0": {
+              "n": 26,
+              "mean": 1.0,
+              "median": 1.0,
+              "std": 0.0,
+              "min": 1.0,
+              "max": 1.0
+            },
+            "3.0": {
+              "n": 24,
+              "mean": 3.5833333333333335,
+              "median": 4.0,
+              "std": 0.7755316082290385,
+              "min": 1.0,
+              "max": 4.0
+            },
+            "4.0": {
+              "n": 25,
+              "mean": 3.76,
+              "median": 4.0,
+              "std": 0.5228129047119374,
+              "min": 2.0,
+              "max": 4.0
+            }
+          },
+          "test_type": "Kruskal-Wallis",
+          "h_statistic": 67.8827079835044,
+          "p_value": 1.2121012235519894e-14,
+          "significant": "True",
+          "interpretation": "クラス間に極めて有意な差"
+        }
+      },
+      "composite_analysis": {
+        "q1_composite": {
+          "before_n": 99,
+          "after_n": 99,
+          "before_mean": 3.242424242424242,
+          "after_mean": 2.9393939393939394,
+          "before_std": 0.9045340337332909,
+          "after_std": 0.9347943331391224,
+          "mean_difference": -0.30303030303030276,
+          "u_statistic": 5852.0,
+          "p_value": 0.012515542767155293,
+          "effect_size_r": 0.1774728878018681,
+          "cohens_d": -0.3294564552561943,
+          "significant": "True",
+          "interpretation": "有意な差, 中程度の効果"
+        },
+        "q3_composite": {
+          "before_n": 99,
+          "after_n": 99,
+          "before_mean": 0.6565656565656566,
+          "after_mean": 0.7373737373737373,
+          "before_std": 0.574307323005264,
+          "after_std": 0.5455919568550008,
+          "mean_difference": 0.08080808080808077,
+          "u_statistic": 4524.5,
+          "p_value": 0.2802332173859363,
+          "effect_size_r": 0.07673773078955527,
+          "cohens_d": 0.14426570535975808,
+          "significant": "False",
+          "interpretation": "有意差なし, 効果なし/小"
+        }
+      }
+    },
+    "class_analysis": {
+      "class_comparison_after": {
+        "Q1_total_after": {
+          "variable": "Q1_total_after",
+          "label": "Q1総合スコア（授業後）",
+          "n_total": 26,
+          "n_classes": 3,
+          "classes": [
+            2.0,
+            3.0,
+            4.0
+          ],
+          "descriptive_stats": {
+            "2.0": {
+              "n": 1,
+              "mean": 3.0,
+              "std": NaN,
+              "median": 3.0
+            },
+            "3.0": {
+              "n": 24,
+              "mean": 3.125,
+              "std": 0.9469631093315001,
+              "median": 3.0
+            },
+            "4.0": {
+              "n": 1,
+              "mean": 3.0,
+              "std": NaN,
+              "median": 3.0
+            }
+          },
+          "test_type": "Kruskal-Wallis",
+          "test_statistic": 0.04108203766908532,
+          "p_value": 0.9796685107897878,
+          "eta_squared": 0.0013966480446927375,
+          "significant": "False",
+          "assumption_tests": {
+            "normality_pvals": [
+              0.0011561012912866978
+            ],
+            "normality_ok": "False",
+            "levene_statistic": null,
+            "levene_p": null,
+            "homogeneity_ok": false,
+            "use_parametric": "False"
+          },
+          "posthoc_results": null,
+          "interpretation": "非有意, 効果なし/小"
+        },
+        "Q3_total_after": {
+          "variable": "Q3_total_after",
+          "label": "Q3総合スコア（授業後）",
+          "n_total": 26,
+          "n_classes": 3,
+          "classes": [
+            2.0,
+            3.0,
+            4.0
+          ],
+          "descriptive_stats": {
+            "2.0": {
+              "n": 1,
+              "mean": 0.0,
+              "std": NaN,
+              "median": 0.0
+            },
+            "3.0": {
+              "n": 24,
+              "mean": 0.7916666666666666,
+              "std": 0.4148511169990534,
+              "median": 1.0
+            },
+            "4.0": {
+              "n": 1,
+              "mean": 1.0,
+              "std": NaN,
+              "median": 1.0
+            }
+          },
+          "test_type": "Kruskal-Wallis",
+          "test_statistic": 3.5590277777778123,
+          "p_value": 0.1687201440739014,
+          "eta_squared": 0.14236111111111108,
+          "significant": "False",
+          "assumption_tests": {
+            "normality_pvals": [
+              5.976188622554765e-08
+            ],
+            "normality_ok": "False",
+            "levene_statistic": null,
+            "levene_p": null,
+            "homogeneity_ok": false,
+            "use_parametric": "False"
+          },
+          "posthoc_results": null,
+          "interpretation": "非有意, 極めて大きな効果"
+        },
+        "Q4_ExperimentInterestRating": {
+          "variable": "Q4_ExperimentInterestRating",
+          "label": "実験への興味",
+          "n_total": 26,
+          "n_classes": 3,
+          "classes": [
+            2.0,
+            3.0,
+            4.0
+          ],
+          "descriptive_stats": {
+            "2.0": {
+              "n": 1,
+              "mean": 1.0,
+              "std": NaN,
+              "median": 1.0
+            },
+            "3.0": {
+              "n": 24,
+              "mean": 3.7083333333333335,
+              "std": 0.6902530516863499,
+              "median": 4.0
+            },
+            "4.0": {
+              "n": 1,
+              "mean": 2.0,
+              "std": NaN,
+              "median": 2.0
+            }
+          },
+          "test_type": "Kruskal-Wallis",
+          "test_statistic": 7.760534103720413,
+          "p_value": 0.020645311076741748,
+          "eta_squared": 0.4644423558897246,
+          "significant": "True",
+          "assumption_tests": {
+            "normality_pvals": [
+              4.0494398789603484e-08
+            ],
+            "normality_ok": "False",
+            "levene_statistic": null,
+            "levene_p": null,
+            "homogeneity_ok": false,
+            "use_parametric": "False"
+          },
+          "posthoc_results": null,
+          "interpretation": "有意, 極めて大きな効果"
+        },
+        "Q5_NewLearningsRating": {
+          "variable": "Q5_NewLearningsRating",
+          "label": "新しい学び",
+          "n_total": 26,
+          "n_classes": 3,
+          "classes": [
+            2.0,
+            3.0,
+            4.0
+          ],
+          "descriptive_stats": {
+            "2.0": {
+              "n": 1,
+              "mean": 1.0,
+              "std": NaN,
+              "median": 1.0
+            },
+            "3.0": {
+              "n": 24,
+              "mean": 3.7083333333333335,
+              "std": 0.5500329370901873,
+              "median": 4.0
+            },
+            "4.0": {
+              "n": 1,
+              "mean": 3.0,
+              "std": NaN,
+              "median": 3.0
+            }
+          },
+          "test_type": "Kruskal-Wallis",
+          "test_statistic": 6.188454364046529,
+          "p_value": 0.04531001532746149,
+          "eta_squared": 0.5149687220732796,
+          "significant": "True",
+          "assumption_tests": {
+            "normality_pvals": [
+              3.7330214585397945e-07
+            ],
+            "normality_ok": "False",
+            "levene_statistic": null,
+            "levene_p": null,
+            "homogeneity_ok": false,
+            "use_parametric": "False"
+          },
+          "posthoc_results": null,
+          "interpretation": "有意, 極めて大きな効果"
+        },
+        "Q6_DissolvingUnderstandingRating": {
+          "variable": "Q6_DissolvingUnderstandingRating",
+          "label": "溶解理解度",
+          "n_total": 26,
+          "n_classes": 3,
+          "classes": [
+            2.0,
+            3.0,
+            4.0
+          ],
+          "descriptive_stats": {
+            "2.0": {
+              "n": 1,
+              "mean": 1.0,
+              "std": NaN,
+              "median": 1.0
+            },
+            "3.0": {
+              "n": 24,
+              "mean": 3.5833333333333335,
+              "std": 0.7755316082290385,
+              "median": 4.0
+            },
+            "4.0": {
+              "n": 1,
+              "mean": 2.0,
+              "std": NaN,
+              "median": 2.0
+            }
+          },
+          "test_type": "Kruskal-Wallis",
+          "test_statistic": 6.328861204280486,
+          "p_value": 0.04223818530061217,
+          "eta_squared": 0.38095238095238104,
+          "significant": "True",
+          "assumption_tests": {
+            "normality_pvals": [
+              7.117437004864544e-07
+            ],
+            "normality_ok": "False",
+            "levene_statistic": null,
+            "levene_p": null,
+            "homogeneity_ok": false,
+            "use_parametric": "False"
+          },
+          "posthoc_results": null,
+          "interpretation": "有意, 極めて大きな効果"
+        }
+      },
+      "factors_analysis": {
+        "multiple_regression": {
+          "error": "重回帰分析エラー: invalid syntax (<unknown>, line 1)"
+        },
+        "logistic_regression": {
+          "n": 26,
+          "feature_names": [
+            "Q4_ExperimentInterestRating",
+            "Q1_total_before",
+            "Q3_total_before",
+            "class_3.0",
+            "class_4.0"
+          ],
+          "coefficients": [
+            1.6635421681580524,
+            1.0490922073066307,
+            -0.7362824976324858,
+            0.2705273449932423,
+            -0.2181836547381709
+          ],
+          "intercept": 0.8347320976042303,
+          "accuracy": 0.9615384615384616,
+          "precision": 0.9444444444444444,
+          "recall": 1.0,
+          "f1_score": 0.9714285714285714,
+          "class_distribution": {
+            "1": 17,
+            "0": 9
+          },
+          "feature_importance": {
+            "Q4_ExperimentInterestRating": 1.6635421681580524,
+            "Q1_total_before": 1.0490922073066307,
+            "Q3_total_before": 0.7362824976324858,
+            "class_3.0": 0.2705273449932423,
+            "class_4.0": 0.2181836547381709
+          }
+        }
+      }
+    },
+    "text_analysis": {
+      "frequency_analysis": {
+        "Q2_before": {
+          "n_texts": 24,
+          "n_processed": 24,
+          "total_words": 47,
+          "unique_words": 18,
+          "top_words": [
+            [
+              "っているから",
+              15
+            ],
+            [
+              "みそが",
+              5
+            ],
+            [
+              "食塩",
+              5
+            ],
+            [
+              "みその",
+              4
+            ],
+            [
+              "みそに",
+              3
+            ],
+            [
+              "っている",
+              2
+            ],
+            [
+              "みそを",
+              2
+            ],
+            [
+              "われているから",
+              1
+            ],
+            [
+              "まれているから",
+              1
+            ],
+            [
+              "けているから",
+              1
+            ],
+            [
+              "にしょっぱくなる",
+              1
+            ],
+            [
+              "成分",
+              1
+            ],
+            [
+              "っていて",
+              1
+            ],
+            [
+              "れているから",
+              1
+            ],
+            [
+              "かして",
+              1
+            ],
+            [
+              "とみそが",
+              1
+            ],
+            [
+              "っていてみそはしょっぱいからしょっぱいとおもった",
+              1
+            ],
+            [
+              "がたまるから",
+              1
+            ]
+          ],
+          "tfidf_words": [
+            [
+              "っているから",
+              0.33696627548880165
+            ],
+            [
+              "みそが",
+              0.16680099935771409
+            ],
+            [
+              "食塩",
+              0.1294483128676324
+            ],
+            [
+              "みその",
+              0.11160275375645541
+            ],
+            [
+              "みそに",
+              0.10222481925953864
+            ],
+            [
+              "っている",
+              0.058298342648893664
+            ],
+            [
+              "みそを",
+              0.05401052082429616
+            ],
+            [
+              "けているから",
+              0.041666666666666664
+            ],
+            [
+              "われているから",
+              0.041666666666666664
+            ],
+            [
+              "がたまるから",
+              0.041666666666666664
+            ],
+            [
+              "かして",
+              0.038549328494406836
+            ],
+            [
+              "まれているから",
+              0.034320632004274876
+            ],
+            [
+              "っていてみそはしょっぱいからしょっぱいとおもった",
+              0.034320632004274876
+            ],
+            [
+              "とみそが",
+              0.03251471421658456
+            ],
+            [
+              "れているから",
+              0.031202261496393605
+            ],
+            [
+              "っていて",
+              0.029826699088177085
+            ],
+            [
+              "成分",
+              0.025282542465842106
+            ],
+            [
+              "にしょっぱくなる",
+              0.025282542465842106
+            ]
+          ],
+          "bigrams": [
+            [
+              "みそが っているから",
+              4
+            ],
+            [
+              "みそに っているから",
+              2
+            ],
+            [
+              "みその 食塩",
+              2
+            ],
+            [
+              "食塩 っているから",
+              2
+            ],
+            [
+              "みそに っている",
+              1
+            ],
+            [
+              "食塩 まれているから",
+              1
+            ],
+            [
+              "みその にしょっぱくなる",
+              1
+            ],
+            [
+              "にしょっぱくなる 成分",
+              1
+            ],
+            [
+              "成分 っているから",
+              1
+            ],
+            [
+              "みそを っていて",
+              1
+            ]
+          ],
+          "trigrams": [
+            [
+              "みその にしょっぱくなる 成分",
+              1
+            ],
+            [
+              "にしょっぱくなる 成分 っているから",
+              1
+            ],
+            [
+              "みそを っていて っているから",
+              1
+            ],
+            [
+              "みその 食塩 っているから",
+              1
+            ],
+            [
+              "みその 食塩 っている",
+              1
+            ],
+            [
+              "食塩 とみそが っているから",
+              1
+            ]
+          ]
+        },
+        "Q2_after": {
+          "n_texts": 24,
+          "n_processed": 24,
+          "total_words": 45,
+          "unique_words": 8,
+          "top_words": [
+            [
+              "っているから",
+              22
+            ],
+            [
+              "ナトリウム",
+              17
+            ],
+            [
+              "まれているから",
+              1
+            ],
+            [
+              "みそが",
+              1
+            ],
+            [
+              "とけた",
+              1
+            ],
+            [
+              "になってみそになってる",
+              1
+            ],
+            [
+              "みそに",
+              1
+            ],
+            [
+              "成分",
+              1
+            ]
+          ],
+          "tfidf_words": [
+            [
+              "ナトリウム",
+              0.6813584143628262
+            ],
+            [
+              "みそが",
+              0.041666666666666664
+            ],
+            [
+              "まれているから",
+              0.038990558610303365
+            ],
+            [
+              "みそに",
+              0.029462782549439483
+            ],
+            [
+              "成分",
+              0.029462782549439483
+            ],
+            [
+              "になってみそになってる",
+              0.029462782549439483
+            ],
+            [
+              "とけた",
+              0.029462782549439483
+            ]
+          ],
+          "bigrams": [
+            [
+              "ナトリウム っているから",
+              16
+            ],
+            [
+              "ナトリウム まれているから",
+              1
+            ],
+            [
+              "みそが っているから",
+              1
+            ],
+            [
+              "とけた になってみそになってる",
+              1
+            ],
+            [
+              "みそに 成分",
+              1
+            ],
+            [
+              "成分 っているから",
+              1
+            ]
+          ],
+          "trigrams": [
+            [
+              "みそに 成分 っているから",
+              1
+            ]
+          ]
+        },
+        "comments": {
+          "n_texts": 11,
+          "n_processed": 11,
+          "total_words": 314,
+          "unique_words": 162,
+          "top_words": [
+            [
+              "東京高専",
+              22
+            ],
+            [
+              "今日",
+              18
+            ],
+            [
+              "のみなさんへ",
+              18
+            ],
+            [
+              "一番印象",
+              11
+            ],
+            [
+              "ったのは",
+              11
+            ],
+            [
+              "実験",
+              10
+            ],
+            [
+              "炎色反応",
+              8
+            ],
+            [
+              "ありがとうございました",
+              7
+            ],
+            [
+              "はありがとうございました",
+              7
+            ],
+            [
+              "再結晶",
+              6
+            ],
+            [
+              "結晶",
+              6
+            ],
+            [
+              "印象",
+              6
+            ],
+            [
+              "理科",
+              5
+            ],
+            [
+              "授業",
+              5
+            ],
+            [
+              "りました",
+              4
+            ],
+            [
+              "しかったです",
+              4
+            ],
+            [
+              "ナトリウム",
+              4
+            ],
+            [
+              "本当",
+              3
+            ],
+            [
+              "わったことです",
+              3
+            ],
+            [
+              "緑色",
+              3
+            ]
+          ],
+          "tfidf_words": [
+            [
+              "一番印象",
+              0.128512503903751
+            ],
+            [
+              "印象",
+              0.12767249248430088
+            ],
+            [
+              "炎色反応",
+              0.11443966907918166
+            ],
+            [
+              "ありがとうございました",
+              0.11427257752786665
+            ],
+            [
+              "再結晶",
+              0.10000820594487138
+            ],
+            [
+              "結晶",
+              0.09255631809094494
+            ],
+            [
+              "はありがとうございました",
+              0.08863993833694951
+            ],
+            [
+              "理科",
+              0.08698761942032755
+            ],
+            [
+              "ナトリウム",
+              0.08497624195736858
+            ],
+            [
+              "授業",
+              0.07609030584111136
+            ],
+            [
+              "しかったです",
+              0.07526044982073482
+            ],
+            [
+              "りました",
+              0.06960461174789172
+            ],
+            [
+              "本当",
+              0.05955132087997505
+            ],
+            [
+              "緑色",
+              0.05873552196098821
+            ],
+            [
+              "わったことです",
+              0.05780190009576176
+            ],
+            [
+              "とくに",
+              0.05580457637050563
+            ],
+            [
+              "変化",
+              0.04709054754103144
+            ],
+            [
+              "よう",
+              0.04426227942206581
+            ],
+            [
+              "完成",
+              0.042896486604819116
+            ],
+            [
+              "やってみたいです",
+              0.0428445447203638
+            ]
+          ],
+          "bigrams": [
+            [
+              "東京高専 のみなさんへ",
+              18
+            ],
+            [
+              "のみなさんへ 今日",
+              16
+            ],
+            [
+              "一番印象 ったのは",
+              8
+            ],
+            [
+              "今日 はありがとうございました",
+              7
+            ],
+            [
+              "はありがとうございました 一番印象",
+              5
+            ],
+            [
+              "今日 ありがとうございました",
+              5
+            ],
+            [
+              "印象 ったのは",
+              3
+            ],
+            [
+              "ったのは 再結晶",
+              3
+            ],
+            [
+              "ったのは 炎色反応",
+              3
+            ],
+            [
+              "今日 理科",
+              2
+            ]
+          ],
+          "trigrams": [
+            [
+              "東京高専 のみなさんへ 今日",
+              16
+            ],
+            [
+              "のみなさんへ 今日 はありがとうございました",
+              7
+            ],
+            [
+              "今日 はありがとうございました 一番印象",
+              5
+            ],
+            [
+              "はありがとうございました 一番印象 ったのは",
+              5
+            ],
+            [
+              "のみなさんへ 今日 ありがとうございました",
+              5
+            ],
+            [
+              "今日 ありがとうございました 一番印象",
+              2
+            ],
+            [
+              "ありがとうございました 一番印象 ったのは",
+              2
+            ],
+            [
+              "一番印象 ったのは 再結晶",
+              2
+            ],
+            [
+              "一番印象 ったのは 炎色反応",
+              2
+            ],
+            [
+              "東京高専 さんへ おもしろく",
+              1
+            ]
+          ]
+        },
+        "q2_comparison": {
+          "n_paired": 22,
+          "before_total_words": 42,
+          "after_total_words": 41,
+          "before_unique": 17,
+          "after_unique": 7,
+          "new_words": [
+            "とけた",
+            "になってみそになってる",
+            "ナトリウム"
+          ],
+          "disappeared_words": [
+            "食塩",
+            "われているから",
+            "っていて",
+            "みそが",
+            "にしょっぱくなる",
+            "かして",
+            "っている",
+            "っていてみそはしょっぱいからしょっぱいとおもった",
+            "けているから",
+            "みそを"
+          ],
+          "frequency_changes": [
+            [
+              "っているから",
+              15,
+              20,
+              5
+            ],
+            [
+              "みそに",
+              3,
+              1,
+              -2
+            ]
+          ]
+        }
+      },
+      "sentiment_analysis": {
+        "Q2_before": {
+          "n_texts": 24,
+          "sentiment_scores": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mean_sentiment": 0.0,
+          "std_sentiment": 0.0,
+          "median_sentiment": 0.0,
+          "positive_ratio": 0.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 1.0,
+          "detailed_results": [
+            {
+              "text_index": 0,
+              "positive_count": 0,
+              "negative_count": 0,
+              "total_words": 1,
+              "sentiment_score": 0.0
+            },
+            {
+              "text_index": 1,
+              "positive_count": 0,
+              "negative_count": 0,
+              "total_words": 2,
+              "sentiment_score": 0.0
+            },
+            {
+              "text_index": 2,
+              "positive_count": 0,
+              "negative_count": 0,
+              "total_words": 2,
+              "sentiment_score": 0.0
+            },
+            {
+              "text_index": 3,
+              "positive_count": 0,
+              "negative_count": 0,
+              "total_words": 2,
+              "sentiment_score": 0.0
+            },
+            {
+              "text_index": 4,
+              "positive_count": 0,
+              "negative_count": 0,
+              "total_words": 1,
+              "sentiment_score": 0.0
+            },
+            {
+              "text_index": 5,
+              "positive_count": 0,
+              "negative_count": 0,
+              "total_words": 2,
+              "sentiment_score": 0.0
+            },
+            {
+              "text_index": 6,
+              "positive_count": 0,
+              "negative_count": 0,
+              "total_words": 1,
+              "sentiment_score": 0.0
+            },
+            {
+              "text_index": 7,
+              "positive_count": 0,
+              "negative_count": 0,
+              "total_words": 4,
+              "sentiment_score": 0.0
+            },
+            {
+              "text_index": 8,
+              "positive_count": 0,
+              "negative_count": 0,
+              "total_words": 3,
+              "sentiment_score": 0.0
+            },
+            {
+              "text_index": 9,
+              "positive_count": 0,
+              "negative_count": 0,
+              "total_words": 2,
+              "sentiment_score": 0.0
+            },
+            {
+              "text_index": 10,
+              "positive_count": 0,
+              "negative_count": 0,
+              "total_words": 3,
+              "sentiment_score": 0.0
+            },
+            {
+              "text_index": 11,
+              "positive_count": 0,
+              "negative_count": 0,
+              "total_words": 3,
+              "sentiment_score": 0.0
+            },
+            {
+              "text_index": 12,
+              "positive_count": 0,
+              "negative_count": 0,
+              "total_words": 1,
+              "sentiment_score": 0.0
+            },
+            {
+              "text_index": 13,
+              "positive_count": 0,
+              "negative_count": 0,
+              "total_words": 2,
+              "sentiment_score": 0.0
+            },
+            {
+              "text_index": 14,
+              "positive_count": 0,
+              "negative_count": 0,
+              "total_words": 1,
+              "sentiment_score": 0.0
+            },
+            {
+              "text_index": 15,
+              "positive_count": 0,
+              "negative_count": 0,
+              "total_words": 2,
+              "sentiment_score": 0.0
+            },
+            {
+              "text_index": 16,
+              "positive_count": 0,
+              "negative_count": 0,
+              "total_words": 2,
+              "sentiment_score": 0.0
+            },
+            {
+              "text_index": 17,
+              "positive_count": 0,
+              "negative_count": 0,
+              "total_words": 2,
+              "sentiment_score": 0.0
+            },
+            {
+              "text_index": 18,
+              "positive_count": 0,
+              "negative_count": 0,
+              "total_words": 2,
+              "sentiment_score": 0.0
+            },
+            {
+              "text_index": 19,
+              "positive_count": 0,
+              "negative_count": 0,
+              "total_words": 1,
+              "sentiment_score": 0.0
+            },
+            {
+              "text_index": 20,
+              "positive_count": 0,
+              "negative_count": 0,
+              "total_words": 3,
+              "sentiment_score": 0.0
+            },
+            {
+              "text_index": 21,
+              "positive_count": 0,
+              "negative_count": 0,
+              "total_words": 2,
+              "sentiment_score": 0.0
+            },
+            {
+              "text_index": 22,
+              "positive_count": 0,
+              "negative_count": 0,
+              "total_words": 2,
+              "sentiment_score": 0.0
+            },
+            {
+              "text_index": 23,
+              "positive_count": 0,
+              "negative_count": 0,
+              "total_words": 1,
+              "sentiment_score": 0.0
+            }
+          ]
+        },
+        "Q2_after": {
+          "n_texts": 24,
+          "sentiment_scores": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mean_sentiment": 0.0,
+          "std_sentiment": 0.0,
+          "median_sentiment": 0.0,
+          "positive_ratio": 0.0,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 1.0,
+          "detailed_results": [
+            {
+              "text_index": 0,
+              "positive_count": 0,
+              "negative_count": 0,
+              "total_words": 2,
+              "sentiment_score": 0.0
+            },
+            {
+              "text_index": 1,
+              "positive_count": 0,
+              "negative_count": 0,
+              "total_words": 2,
+              "sentiment_score": 0.0
+            },
+            {
+              "text_index": 2,
+              "positive_count": 0,
+              "negative_count": 0,
+              "total_words": 2,
+              "sentiment_score": 0.0
+            },
+            {
+              "text_index": 3,
+              "positive_count": 0,
+              "negative_count": 0,
+              "total_words": 2,
+              "sentiment_score": 0.0
+            },
+            {
+              "text_index": 4,
+              "positive_count": 0,
+              "negative_count": 0,
+              "total_words": 1,
+              "sentiment_score": 0.0
+            },
+            {
+              "text_index": 5,
+              "positive_count": 0,
+              "negative_count": 0,
+              "total_words": 1,
+              "sentiment_score": 0.0
+            },
+            {
+              "text_index": 6,
+              "positive_count": 0,
+              "negative_count": 0,
+              "total_words": 2,
+              "sentiment_score": 0.0
+            },
+            {
+              "text_index": 7,
+              "positive_count": 0,
+              "negative_count": 0,
+              "total_words": 2,
+              "sentiment_score": 0.0
+            },
+            {
+              "text_index": 8,
+              "positive_count": 0,
+              "negative_count": 0,
+              "total_words": 2,
+              "sentiment_score": 0.0
+            },
+            {
+              "text_index": 9,
+              "positive_count": 0,
+              "negative_count": 0,
+              "total_words": 2,
+              "sentiment_score": 0.0
+            },
+            {
+              "text_index": 10,
+              "positive_count": 0,
+              "negative_count": 0,
+              "total_words": 2,
+              "sentiment_score": 0.0
+            },
+            {
+              "text_index": 11,
+              "positive_count": 0,
+              "negative_count": 0,
+              "total_words": 1,
+              "sentiment_score": 0.0
+            },
+            {
+              "text_index": 12,
+              "positive_count": 0,
+              "negative_count": 0,
+              "total_words": 2,
+              "sentiment_score": 0.0
+            },
+            {
+              "text_index": 13,
+              "positive_count": 0,
+              "negative_count": 0,
+              "total_words": 2,
+              "sentiment_score": 0.0
+            },
+            {
+              "text_index": 14,
+              "positive_count": 0,
+              "negative_count": 0,
+              "total_words": 2,
+              "sentiment_score": 0.0
+            },
+            {
+              "text_index": 15,
+              "positive_count": 0,
+              "negative_count": 0,
+              "total_words": 2,
+              "sentiment_score": 0.0
+            },
+            {
+              "text_index": 16,
+              "positive_count": 0,
+              "negative_count": 0,
+              "total_words": 2,
+              "sentiment_score": 0.0
+            },
+            {
+              "text_index": 17,
+              "positive_count": 0,
+              "negative_count": 0,
+              "total_words": 2,
+              "sentiment_score": 0.0
+            },
+            {
+              "text_index": 18,
+              "positive_count": 0,
+              "negative_count": 0,
+              "total_words": 2,
+              "sentiment_score": 0.0
+            },
+            {
+              "text_index": 19,
+              "positive_count": 0,
+              "negative_count": 0,
+              "total_words": 2,
+              "sentiment_score": 0.0
+            },
+            {
+              "text_index": 20,
+              "positive_count": 0,
+              "negative_count": 0,
+              "total_words": 1,
+              "sentiment_score": 0.0
+            },
+            {
+              "text_index": 21,
+              "positive_count": 0,
+              "negative_count": 0,
+              "total_words": 2,
+              "sentiment_score": 0.0
+            },
+            {
+              "text_index": 22,
+              "positive_count": 0,
+              "negative_count": 0,
+              "total_words": 2,
+              "sentiment_score": 0.0
+            },
+            {
+              "text_index": 23,
+              "positive_count": 0,
+              "negative_count": 0,
+              "total_words": 3,
+              "sentiment_score": 0.0
+            }
+          ]
+        },
+        "comments": {
+          "n_texts": 11,
+          "sentiment_scores": [
+            0.0,
+            0.1111111111111111,
+            0.07142857142857142,
+            0.034482758620689655,
+            0.0,
+            0.0,
+            0.0,
+            0.030303030303030304,
+            0.030303030303030304,
+            0.06666666666666667,
+            0.0625
+          ],
+          "mean_sentiment": 0.03698137894846359,
+          "std_sentiment": 0.035394113439787,
+          "median_sentiment": 0.030303030303030304,
+          "positive_ratio": 0.6363636363636364,
+          "negative_ratio": 0.0,
+          "neutral_ratio": 0.36363636363636365,
+          "detailed_results": [
+            {
+              "text_index": 0,
+              "positive_count": 0,
+              "negative_count": 0,
+              "total_words": 32,
+              "sentiment_score": 0.0
+            },
+            {
+              "text_index": 1,
+              "positive_count": 3,
+              "negative_count": 0,
+              "total_words": 27,
+              "sentiment_score": 0.1111111111111111
+            },
+            {
+              "text_index": 2,
+              "positive_count": 2,
+              "negative_count": 0,
+              "total_words": 28,
+              "sentiment_score": 0.07142857142857142
+            },
+            {
+              "text_index": 3,
+              "positive_count": 1,
+              "negative_count": 0,
+              "total_words": 29,
+              "sentiment_score": 0.034482758620689655
+            },
+            {
+              "text_index": 4,
+              "positive_count": 0,
+              "negative_count": 0,
+              "total_words": 33,
+              "sentiment_score": 0.0
+            },
+            {
+              "text_index": 5,
+              "positive_count": 0,
+              "negative_count": 0,
+              "total_words": 34,
+              "sentiment_score": 0.0
+            },
+            {
+              "text_index": 6,
+              "positive_count": 0,
+              "negative_count": 0,
+              "total_words": 34,
+              "sentiment_score": 0.0
+            },
+            {
+              "text_index": 7,
+              "positive_count": 1,
+              "negative_count": 0,
+              "total_words": 33,
+              "sentiment_score": 0.030303030303030304
+            },
+            {
+              "text_index": 8,
+              "positive_count": 1,
+              "negative_count": 0,
+              "total_words": 33,
+              "sentiment_score": 0.030303030303030304
+            },
+            {
+              "text_index": 9,
+              "positive_count": 1,
+              "negative_count": 0,
+              "total_words": 15,
+              "sentiment_score": 0.06666666666666667
+            },
+            {
+              "text_index": 10,
+              "positive_count": 1,
+              "negative_count": 0,
+              "total_words": 16,
+              "sentiment_score": 0.0625
+            }
+          ]
+        },
+        "correlation_analysis": {
+          "n_pairs": 11,
+          "correlation": NaN,
+          "sentiment_mean": 0.03698137894846359,
+          "understanding_mean": 4.0,
+          "sentiment_std": 0.035394113439787,
+          "understanding_std": 0.0
+        },
+        "interpretation_note": "テキスト分析の解釈は独立群比較として行う。個人の変化ではなく群間差として解釈する。"
+      }
+    }
+  },
+  "discussion": {
+    "key_findings": {
+      "statistical_significance": {
+        "chi2_tests": "0/8",
+        "mann_whitney_tests": "5/5"
+      },
+      "effect_sizes": {
+        "large_effects": [],
+        "medium_effects": [],
+        "small_effects": [
+          "Muddywater: h = 0.221",
+          "Ink: h = 0.268",
+          "TeaComponentsDissolve: h = 0.209",
+          "q1_composite: d = 0.329"
+        ]
+      },
+      "practical_significance": {
+        "substantial_effects": false,
+        "moderate_effects": false,
+        "overall_assessment": "limited"
+      }
+    },
+    "educational_implications": {
+      "positive_trends": [],
+      "areas_for_improvement": [],
+      "cautious_interpretations": [
+        "群間差の観察であり個人の変化ではない",
+        "授業効果以外の要因による可能性",
+        "ランダム割付でないため因果推論に限界"
+      ]
+    },
+    "limitations": {
+      "data_structure": "Page_IDによる個人追跡不可能",
+      "study_design": "独立群比較のため変化量測定不可",
+      "confounding_factors": "授業以外の要因の影響可能性",
+      "generalizability": "この学校・学年に限定された結果"
+    },
+    "future_research": {
+      "recommendations": [
+        "個人識別可能なデータ収集システムの構築",
+        "ランダム割付による実験デザイン",
+        "長期追跡調査の実施",
+        "他校での再現性確認"
+      ]
+    }
+  }
+}

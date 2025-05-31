@@ -1,0 +1,291 @@
+{
+  "mcnemar_analysis": {
+    "q1_results": {
+      "Q1_Saltwater_Response": {
+        "n_pairs": 26,
+        "before_true_rate": 1.0,
+        "after_true_rate": 1.0,
+        "change": 0.0,
+        "crosstab": {
+          "true": {
+            "true": 26
+          }
+        },
+        "mcnemar_statistic": 0.0,
+        "p_value": 1.0,
+        "significant": false,
+        "effect_size": 0.0,
+        "interpretation": "非有意, 効果なし/小"
+      },
+      "Q1_Sugarwater_Response": {
+        "n_pairs": 26,
+        "before_true_rate": 1.0,
+        "after_true_rate": 1.0,
+        "change": 0.0,
+        "crosstab": {
+          "true": {
+            "true": 26
+          }
+        },
+        "mcnemar_statistic": 0.0,
+        "p_value": 1.0,
+        "significant": false,
+        "effect_size": 0.0,
+        "interpretation": "非有意, 効果なし/小"
+      },
+      "Q1_Muddywater_Response": {
+        "n_pairs": 26,
+        "before_true_rate": 0.11538461538461539,
+        "after_true_rate": 0.0,
+        "change": -0.11538461538461539,
+        "crosstab": {
+          "false": {
+            "false": 23,
+            "true": 3
+          }
+        },
+        "mcnemar_statistic": 0.0,
+        "p_value": 0.25,
+        "significant": false,
+        "effect_size": -1.7320508075688774,
+        "interpretation": "非有意, 大きな効果"
+      },
+      "Q1_Ink_Response": {
+        "n_pairs": 26,
+        "before_true_rate": 0.038461538461538464,
+        "after_true_rate": 0.07692307692307693,
+        "change": 0.038461538461538464,
+        "crosstab": {
+          "false": {
+            "false": 23,
+            "true": 1
+          },
+          "true": {
+            "false": 2,
+            "true": 0
+          }
+        },
+        "mcnemar_statistic": 1.0,
+        "p_value": 1.0,
+        "significant": false,
+        "effect_size": 0.5773502691896258,
+        "interpretation": "非有意, 大きな効果"
+      },
+      "Q1_MisoSoup_Response": {
+        "n_pairs": 26,
+        "before_true_rate": 0.34615384615384615,
+        "after_true_rate": 0.4230769230769231,
+        "change": 0.07692307692307693,
+        "crosstab": {
+          "false": {
+            "false": 7,
+            "true": 8
+          },
+          "true": {
+            "false": 10,
+            "true": 1
+          }
+        },
+        "mcnemar_statistic": 8.0,
+        "p_value": 0.8145294189453125,
+        "significant": false,
+        "effect_size": 0.47140452079103173,
+        "interpretation": "非有意, 中程度の効果"
+      },
+      "Q1_SoySauce_Response": {
+        "n_pairs": 26,
+        "before_true_rate": 0.7307692307692307,
+        "after_true_rate": 0.6153846153846154,
+        "change": -0.11538461538461531,
+        "crosstab": {
+          "false": {
+            "false": 2,
+            "true": 8
+          },
+          "true": {
+            "false": 5,
+            "true": 11
+          }
+        },
+        "mcnemar_statistic": 5.0,
+        "p_value": 0.5810546875,
+        "significant": false,
+        "effect_size": -0.8320502943378437,
+        "interpretation": "非有意, 大きな効果"
+      }
+    },
+    "q3_results": {
+      "Q3_TeaLeavesDissolve": {
+        "n_pairs": 26,
+        "before_true_rate": 0.07692307692307693,
+        "after_true_rate": 0.0,
+        "change": -0.07692307692307693,
+        "crosstab": {
+          "false": {
+            "false": 24,
+            "true": 2
+          }
+        },
+        "mcnemar_statistic": 0.0,
+        "p_value": 0.5,
+        "significant": false,
+        "effect_size": -1.414213562373095,
+        "interpretation": "非有意, 大きな効果"
+      },
+      "Q3_TeaComponentsDissolve": {
+        "n_pairs": 26,
+        "before_true_rate": 0.7692307692307693,
+        "after_true_rate": 0.7692307692307693,
+        "change": 0.0,
+        "crosstab": {
+          "false": {
+            "false": 2,
+            "true": 4
+          },
+          "true": {
+            "false": 4,
+            "true": 16
+          }
+        },
+        "mcnemar_statistic": 4.0,
+        "p_value": 1.0,
+        "significant": false,
+        "effect_size": 0.0,
+        "interpretation": "非有意, 効果なし/小"
+      }
+    },
+    "summary": {},
+    "multiple_testing": {
+      "method": "Bonferroni + FDR",
+      "total_tests": 8,
+      "corrected_results": {
+        "q1_results_Q1_Saltwater_Response": {
+          "original_p": 1.0,
+          "bonferroni_p": 1.0,
+          "fdr_p": 1.0,
+          "bonferroni_significant": "False",
+          "fdr_significant": "False"
+        },
+        "q1_results_Q1_Sugarwater_Response": {
+          "original_p": 1.0,
+          "bonferroni_p": 1.0,
+          "fdr_p": 1.0,
+          "bonferroni_significant": "False",
+          "fdr_significant": "False"
+        },
+        "q1_results_Q1_Muddywater_Response": {
+          "original_p": 0.25,
+          "bonferroni_p": 1.0,
+          "fdr_p": 1.0,
+          "bonferroni_significant": "False",
+          "fdr_significant": "False"
+        },
+        "q1_results_Q1_Ink_Response": {
+          "original_p": 1.0,
+          "bonferroni_p": 1.0,
+          "fdr_p": 1.0,
+          "bonferroni_significant": "False",
+          "fdr_significant": "False"
+        },
+        "q1_results_Q1_MisoSoup_Response": {
+          "original_p": 0.8145294189453125,
+          "bonferroni_p": 1.0,
+          "fdr_p": 1.0,
+          "bonferroni_significant": "False",
+          "fdr_significant": "False"
+        },
+        "q1_results_Q1_SoySauce_Response": {
+          "original_p": 0.5810546875,
+          "bonferroni_p": 1.0,
+          "fdr_p": 1.0,
+          "bonferroni_significant": "False",
+          "fdr_significant": "False"
+        },
+        "q3_results_Q3_TeaLeavesDissolve": {
+          "original_p": 0.5,
+          "bonferroni_p": 1.0,
+          "fdr_p": 1.0,
+          "bonferroni_significant": "False",
+          "fdr_significant": "False"
+        },
+        "q3_results_Q3_TeaComponentsDissolve": {
+          "original_p": 1.0,
+          "bonferroni_p": 1.0,
+          "fdr_p": 1.0,
+          "bonferroni_significant": "False",
+          "fdr_significant": "False"
+        }
+      }
+    }
+  },
+  "composite_analysis": {
+    "q1_composite": {
+      "n_pairs": 26,
+      "before_mean": 3.230769230769231,
+      "after_mean": 3.1153846153846154,
+      "before_std": 0.6516251872168423,
+      "after_std": 0.9089300556994725,
+      "mean_difference": -0.11538461538461539,
+      "t_statistic": 0.5313272602318608,
+      "p_value": 0.5998815738819898,
+      "cohens_d": -0.14590638925422625,
+      "ci_95_lower": -0.5626401611955442,
+      "ci_95_upper": 0.3318709304263133,
+      "significant": "False",
+      "effect_interpretation": "効果なし/小"
+    },
+    "q3_composite": {
+      "n_pairs": 26,
+      "before_mean": 0.8461538461538461,
+      "after_mean": 0.7692307692307693,
+      "before_std": 0.36794648440311994,
+      "after_std": 0.4296689244236597,
+      "mean_difference": -0.07692307692307693,
+      "t_statistic": 0.8111071056538126,
+      "p_value": 0.4249592549143707,
+      "cohens_d": -0.19230769230769232,
+      "ci_95_lower": -0.27224381991149027,
+      "ci_95_upper": 0.11839766606533642,
+      "significant": "False",
+      "effect_interpretation": "効果なし/小"
+    }
+  },
+  "power_analysis": {
+    "effect_0.2": {
+      "effect_size": 0.2,
+      "sample_size": 26,
+      "power": 0.16543238936109544,
+      "adequate": "False"
+    },
+    "effect_0.5": {
+      "effect_size": 0.5,
+      "sample_size": 26,
+      "power": 0.6881801365695017,
+      "adequate": "False"
+    },
+    "effect_0.8": {
+      "effect_size": 0.8,
+      "sample_size": 26,
+      "power": 0.9748894360955422,
+      "adequate": "True"
+    },
+    "required_n_effect_0.2": {
+      "effect_size": 0.2,
+      "required_n": 199,
+      "current_n": 26,
+      "sufficient": false
+    },
+    "required_n_effect_0.5": {
+      "effect_size": 0.5,
+      "required_n": 34,
+      "current_n": 26,
+      "sufficient": false
+    },
+    "required_n_effect_0.8": {
+      "effect_size": 0.8,
+      "required_n": 15,
+      "current_n": 26,
+      "sufficient": true
+    }
+  }
+}

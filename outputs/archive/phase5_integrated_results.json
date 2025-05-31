@@ -1,0 +1,291 @@
+{
+  "meta_analysis": {
+    "mcnemar_effects": [
+      {
+        "category": "q1_results",
+        "item": "Q1_Saltwater_Response",
+        "effect_size": 0.0,
+        "p_value": 1.0,
+        "significant": false,
+        "change": 0.0,
+        "n_pairs": 26
+      },
+      {
+        "category": "q1_results",
+        "item": "Q1_Sugarwater_Response",
+        "effect_size": 0.0,
+        "p_value": 1.0,
+        "significant": false,
+        "change": 0.0,
+        "n_pairs": 26
+      },
+      {
+        "category": "q1_results",
+        "item": "Q1_Muddywater_Response",
+        "effect_size": -1.7320508075688774,
+        "p_value": 0.25,
+        "significant": false,
+        "change": -0.11538461538461539,
+        "n_pairs": 26
+      },
+      {
+        "category": "q1_results",
+        "item": "Q1_Ink_Response",
+        "effect_size": 0.5773502691896258,
+        "p_value": 1.0,
+        "significant": false,
+        "change": 0.038461538461538464,
+        "n_pairs": 26
+      },
+      {
+        "category": "q1_results",
+        "item": "Q1_MisoSoup_Response",
+        "effect_size": 0.47140452079103173,
+        "p_value": 0.8145294189453125,
+        "significant": false,
+        "change": 0.07692307692307693,
+        "n_pairs": 26
+      },
+      {
+        "category": "q1_results",
+        "item": "Q1_SoySauce_Response",
+        "effect_size": -0.8320502943378437,
+        "p_value": 0.5810546875,
+        "significant": false,
+        "change": -0.11538461538461531,
+        "n_pairs": 26
+      },
+      {
+        "category": "q3_results",
+        "item": "Q3_TeaLeavesDissolve",
+        "effect_size": -1.414213562373095,
+        "p_value": 0.5,
+        "significant": false,
+        "change": -0.07692307692307693,
+        "n_pairs": 26
+      },
+      {
+        "category": "q3_results",
+        "item": "Q3_TeaComponentsDissolve",
+        "effect_size": 0.0,
+        "p_value": 1.0,
+        "significant": false,
+        "change": 0.0,
+        "n_pairs": 26
+      }
+    ],
+    "composite_effects": [
+      {
+        "category": "q1_composite",
+        "cohens_d": -0.14590638925422625,
+        "p_value": 0.5998815738819898,
+        "significant": "False",
+        "mean_difference": -0.11538461538461539,
+        "n_pairs": 26
+      },
+      {
+        "category": "q3_composite",
+        "cohens_d": -0.19230769230769232,
+        "p_value": 0.4249592549143707,
+        "significant": "False",
+        "mean_difference": -0.07692307692307693,
+        "n_pairs": 26
+      }
+    ],
+    "class_effects": [
+      {
+        "category": "before_analysis",
+        "variable": "Q1_total_before",
+        "eta_squared": 0.06189613526570047,
+        "p_value": 0.41508705287850967,
+        "significant": "False",
+        "test_type": "Kruskal-Wallis"
+      },
+      {
+        "category": "before_analysis",
+        "variable": "Q3_total_before",
+        "eta_squared": 0.224431818181818,
+        "p_value": 0.060482710764556816,
+        "significant": "False",
+        "test_type": "Kruskal-Wallis"
+      },
+      {
+        "category": "after_analysis",
+        "variable": "Q1_total_after",
+        "eta_squared": 0.0013966480446927375,
+        "p_value": 0.9796685107897878,
+        "significant": "False",
+        "test_type": "Kruskal-Wallis"
+      },
+      {
+        "category": "after_analysis",
+        "variable": "Q3_total_after",
+        "eta_squared": 0.14236111111111108,
+        "p_value": 0.1687201440739014,
+        "significant": "False",
+        "test_type": "Kruskal-Wallis"
+      },
+      {
+        "category": "after_analysis",
+        "variable": "Q4_ExperimentInterestRating",
+        "eta_squared": 0.4644423558897246,
+        "p_value": 0.020645311076741748,
+        "significant": "True",
+        "test_type": "Kruskal-Wallis"
+      },
+      {
+        "category": "after_analysis",
+        "variable": "Q5_NewLearningsRating",
+        "eta_squared": 0.5149687220732796,
+        "p_value": 0.04531001532746149,
+        "significant": "True",
+        "test_type": "Kruskal-Wallis"
+      },
+      {
+        "category": "after_analysis",
+        "variable": "Q6_DissolvingUnderstandingRating",
+        "eta_squared": 0.38095238095238104,
+        "p_value": 0.04223818530061217,
+        "significant": "True",
+        "test_type": "Kruskal-Wallis"
+      },
+      {
+        "category": "change_analysis",
+        "variable": "Q1_total_change",
+        "eta_squared": 0.02676704307820995,
+        "p_value": 0.6216205875897893,
+        "significant": "False",
+        "test_type": "Kruskal-Wallis"
+      },
+      {
+        "category": "change_analysis",
+        "variable": "Q3_total_change",
+        "eta_squared": 0.0021929824561403508,
+        "p_value": 0.9663819515424399,
+        "significant": "False",
+        "test_type": "Kruskal-Wallis"
+      }
+    ],
+    "overall_summary": {
+      "total_effect_sizes": 19,
+      "significant_effects": 11,
+      "positive_effects": 11,
+      "negative_effects": 5,
+      "largest_effect": {
+        "source": "Q1_Muddywater_Response",
+        "effect_size": -1.7320508075688774,
+        "type": "mcnemar"
+      },
+      "most_consistent_finding": null
+    }
+  },
+  "prediction_model": {
+    "features": {
+      "success": true,
+      "X": "    Q1_total_before  Q3_total_before  ...  class_3.0  class_4.0\n0                 3                0  ...       True      False\n1                 3                0  ...       True      False\n2                 3                0  ...       True      False\n3                 4                1  ...       True      False\n4                 4                1  ...       True      False\n5                 3                1  ...       True      False\n6                 3                1  ...       True      False\n7                 3                1  ...       True      False\n8                 3                1  ...       True      False\n9                 3                1  ...       True      False\n10                3                1  ...       True      False\n11                3                1  ...       True      False\n12                3                1  ...       True      False\n13                4                1  ...       True      False\n14                4                1  ...       True      False\n15                4                1  ...       True      False\n16                4                1  ...       True      False\n17                4                1  ...       True      False\n18                4                1  ...       True      False\n19                3                1  ...       True      False\n20                3                1  ...       True      False\n21                2                1  ...       True      False\n22                2                1  ...       True      False\n23                2                1  ...       True      False\n24                4                1  ...      False       True\n25                3                0  ...      False      False\n\n[26 rows x 7 columns]",
+      "y": "0     1\n1     1\n2     1\n3     1\n4     1\n5     1\n6     1\n7     1\n8     1\n9     1\n10    1\n11    1\n12    1\n13    1\n14    1\n15    1\n16    1\n17    0\n18    0\n19    0\n20    0\n21    0\n22    0\n23    0\n24    0\n25    0\nName: Q6_DissolvingUnderstandingRating, dtype: int64",
+      "feature_names": [
+        "Q1_total_before",
+        "Q3_total_before",
+        "Q4_ExperimentInterestRating",
+        "Q5_NewLearningsRating",
+        "class_2.0",
+        "class_3.0",
+        "class_4.0"
+      ],
+      "n_samples": 26,
+      "n_features": 7,
+      "class_distribution": {
+        "1": 17,
+        "0": 9
+      }
+    },
+    "model": {
+      "model_type": "RandomForest",
+      "cv_scores": [
+        0.8333333333333334,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "cv_mean": 0.9666666666666668,
+      "cv_std": 0.06666666666666667,
+      "train_accuracy": 1.0,
+      "feature_importance": [
+        [
+          "Q1_total_before",
+          0.3150036270898707
+        ],
+        [
+          "Q5_NewLearningsRating",
+          0.2893941954606178
+        ],
+        [
+          "Q4_ExperimentInterestRating",
+          0.24637624705202552
+        ],
+        [
+          "Q3_total_before",
+          0.054562969347688776
+        ],
+        [
+          "class_3.0",
+          0.049567372546016356
+        ],
+        [
+          "class_2.0",
+          0.023552393699196074
+        ],
+        [
+          "class_4.0",
+          0.021543194804584956
+        ]
+      ],
+      "class_distribution": {
+        "1": 17,
+        "0": 9
+      },
+      "confusion_matrix": [
+        [
+          9,
+          0
+        ],
+        [
+          0,
+          17
+        ]
+      ]
+    }
+  },
+  "educational_insights": {
+    "effectiveness_summary": {
+      "statistical_significance": "none",
+      "effect_size_magnitude": "mixed",
+      "practical_significance": "moderate",
+      "student_satisfaction": "moderate",
+      "learning_evidence": "mixed"
+    },
+    "key_factors": [
+      "最重要予測因子: Q4_ExperimentInterestRating (重要度: 1.664)",
+      "科学用語の習得: とけた, になってみそになってる, ナトリウム"
+    ],
+    "improvement_areas": [
+      "Muddywater: -11.5%悪化",
+      "SoySauce: -11.5%悪化",
+      "Q3_TeaLeavesDissolve: -7.7%悪化"
+    ],
+    "successful_elements": [
+      "実験への高い興味・関心（平均3.08/4.0）",
+      "感想文のポジティブ率: 63.6%",
+      "科学用語「ナトリウム」の習得と使用"
+    ],
+    "recommendations": [
+      "今後の評価では最低50名以上のサンプルサイズを確保し、統計的検出力を向上",
+      "炎色反応実験の印象が強いため、この実験を軸とした概念理解の深化を図る",
+      "理解度測定において、単純な○×問題に加えて記述式問題を導入し、理解の質を評価",
+      "授業直後だけでなく、1週間後・1ヶ月後の遅延テストで学習の定着度を評価",
+      "クラス間差異が確認されたため、各クラスの特性に応じた個別対応を検討"
+    ]
+  }
+}

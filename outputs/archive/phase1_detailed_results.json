@@ -1,0 +1,469 @@
+{
+  "quality_check": {
+    "授業前_missing": {
+      "total_rows": 99,
+      "missing_by_column": {
+        "Page_ID": {
+          "count": 0,
+          "percent": 0.0
+        },
+        "class": {
+          "count": 0,
+          "percent": 0.0
+        },
+        "Q1_Saltwater_Response": {
+          "count": 0,
+          "percent": 0.0
+        },
+        "Q1_Sugarwater_Response": {
+          "count": 0,
+          "percent": 0.0
+        },
+        "Q1_Muddywater_Response": {
+          "count": 0,
+          "percent": 0.0
+        },
+        "Q1_Ink_Response": {
+          "count": 0,
+          "percent": 0.0
+        },
+        "Q1_MisoSoup_Response": {
+          "count": 0,
+          "percent": 0.0
+        },
+        "Q1_SoySauce_Response": {
+          "count": 0,
+          "percent": 0.0
+        },
+        "Q2_MisoSalty_Reason": {
+          "count": 15,
+          "percent": 15.151515151515152
+        },
+        "Q3_TeaLeavesDissolve": {
+          "count": 0,
+          "percent": 0.0
+        },
+        "Q3_TeaComponentsDissolve": {
+          "count": 0,
+          "percent": 0.0
+        }
+      },
+      "high_missing_columns": [],
+      "missing_pattern": {
+        "0": 84,
+        "1": 15
+      }
+    },
+    "授業後_missing": {
+      "total_rows": 99,
+      "missing_by_column": {
+        "Page_ID": {
+          "count": 0,
+          "percent": 0.0
+        },
+        "class": {
+          "count": 0,
+          "percent": 0.0
+        },
+        "Q1_Saltwater": {
+          "count": 0,
+          "percent": 0.0
+        },
+        "Q1_Sugarwater": {
+          "count": 0,
+          "percent": 0.0
+        },
+        "Q1_Muddywater": {
+          "count": 0,
+          "percent": 0.0
+        },
+        "Q1_Ink": {
+          "count": 0,
+          "percent": 0.0
+        },
+        "Q1_MisoSoup": {
+          "count": 0,
+          "percent": 0.0
+        },
+        "Q1_SoySauce": {
+          "count": 0,
+          "percent": 0.0
+        },
+        "Q2_MisoSaltyReason": {
+          "count": 4,
+          "percent": 4.040404040404041
+        },
+        "Q3_TeaLeaves_DissolveInWater": {
+          "count": 0,
+          "percent": 0.0
+        },
+        "Q3_TeaComponents_DissolveInWater": {
+          "count": 0,
+          "percent": 0.0
+        },
+        "Q4_ExperimentInterestRating": {
+          "count": 0,
+          "percent": 0.0
+        },
+        "Q4_ExperimentInterestComment": {
+          "count": 99,
+          "percent": 100.0
+        },
+        "Q5_NewLearningsRating": {
+          "count": 0,
+          "percent": 0.0
+        },
+        "Q6_DissolvingUnderstandingRating": {
+          "count": 0,
+          "percent": 0.0
+        },
+        "Q6_DissolvingUnderstandingComment": {
+          "count": 99,
+          "percent": 100.0
+        },
+        "GeneralPageComments": {
+          "count": 99,
+          "percent": 100.0
+        }
+      },
+      "high_missing_columns": [
+        "Q4_ExperimentInterestComment",
+        "Q6_DissolvingUnderstandingComment",
+        "GeneralPageComments"
+      ],
+      "missing_pattern": {
+        "3": 95,
+        "4": 4
+      }
+    },
+    "感想文_missing": {
+      "total_rows": 21,
+      "missing_by_column": {
+        "class": {
+          "count": 0,
+          "percent": 0.0
+        },
+        "page-ID": {
+          "count": 0,
+          "percent": 0.0
+        },
+        "LR": {
+          "count": 0,
+          "percent": 0.0
+        },
+        "comment": {
+          "count": 0,
+          "percent": 0.0
+        }
+      },
+      "high_missing_columns": [],
+      "missing_pattern": {
+        "0": 21
+      }
+    },
+    "page_id_analysis": {
+      "before_unique_ids": 26,
+      "after_unique_ids": 26,
+      "matched_ids": 26,
+      "before_only": [],
+      "after_only": [],
+      "duplicate_check": {
+        "授業前": 73,
+        "授業後": 73
+      }
+    },
+    "consistency_analysis": [
+      {
+        "dataset": "授業前",
+        "issue": "Q1_all_false",
+        "count": 0,
+        "description": "Q1すべてFalse回答"
+      },
+      {
+        "dataset": "授業前",
+        "issue": "Q1_all_true",
+        "count": 2,
+        "description": "Q1すべてTrue回答"
+      },
+      {
+        "dataset": "授業後",
+        "issue": "Q1_all_false",
+        "count": 0,
+        "description": "Q1すべてFalse回答"
+      },
+      {
+        "dataset": "授業後",
+        "issue": "Q1_all_true",
+        "count": 1,
+        "description": "Q1すべてTrue回答"
+      },
+      {
+        "dataset": "授業後",
+        "issue": "invalid_Q4_rating",
+        "count": 0,
+        "description": "Q4評価値異常 (1-4以外)"
+      }
+    ],
+    "outlier_analysis": {
+      "授業前_page_id": {
+        "min": 1,
+        "max": 26,
+        "range": 25,
+        "gaps": []
+      },
+      "授業後_page_id": {
+        "min": 1,
+        "max": 26,
+        "range": 25,
+        "gaps": []
+      },
+      "授業前_classes": {
+        "unique_classes": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "class_counts": {
+          "2.0": 26,
+          "4.0": 25,
+          "1.0": 24,
+          "3.0": 24
+        }
+      },
+      "授業後_classes": {
+        "unique_classes": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "class_counts": {
+          "2.0": 26,
+          "4.0": 25,
+          "1.0": 24,
+          "3.0": 24
+        }
+      }
+    }
+  },
+  "basic_statistics": {
+    "q1_analysis": {
+      "before": {
+        "Saltwater": {
+          "true_rate": 98.98989898989899,
+          "count": 98,
+          "total": 99
+        },
+        "Sugarwater": {
+          "true_rate": 95.95959595959596,
+          "count": 95,
+          "total": 99
+        },
+        "Muddywater": {
+          "true_rate": 20.2020202020202,
+          "count": 20,
+          "total": 99
+        },
+        "Ink": {
+          "true_rate": 18.181818181818183,
+          "count": 18,
+          "total": 99
+        },
+        "MisoSoup": {
+          "true_rate": 48.484848484848484,
+          "count": 48,
+          "total": 99
+        },
+        "SoySauce": {
+          "true_rate": 42.42424242424242,
+          "count": 42,
+          "total": 99
+        }
+      },
+      "after": {
+        "Saltwater": {
+          "true_rate": 96.96969696969697,
+          "count": 96,
+          "total": 99
+        },
+        "Sugarwater": {
+          "true_rate": 96.96969696969697,
+          "count": 96,
+          "total": 99
+        },
+        "Muddywater": {
+          "true_rate": 12.121212121212121,
+          "count": 12,
+          "total": 99
+        },
+        "Ink": {
+          "true_rate": 9.090909090909092,
+          "count": 9,
+          "total": 99
+        },
+        "MisoSoup": {
+          "true_rate": 40.4040404040404,
+          "count": 40,
+          "total": 99
+        },
+        "SoySauce": {
+          "true_rate": 38.38383838383838,
+          "count": 38,
+          "total": 99
+        }
+      },
+      "comparison": {
+        "Saltwater": {
+          "before_rate": 98.98989898989899,
+          "after_rate": 96.96969696969697,
+          "change": -2.0202020202020208,
+          "change_direction": "decrease"
+        },
+        "Sugarwater": {
+          "before_rate": 95.95959595959596,
+          "after_rate": 96.96969696969697,
+          "change": 1.0101010101010104,
+          "change_direction": "increase"
+        },
+        "Muddywater": {
+          "before_rate": 20.2020202020202,
+          "after_rate": 12.121212121212121,
+          "change": -8.08080808080808,
+          "change_direction": "decrease"
+        },
+        "Ink": {
+          "before_rate": 18.181818181818183,
+          "after_rate": 9.090909090909092,
+          "change": -9.090909090909092,
+          "change_direction": "decrease"
+        },
+        "MisoSoup": {
+          "before_rate": 48.484848484848484,
+          "after_rate": 40.4040404040404,
+          "change": -8.080808080808083,
+          "change_direction": "decrease"
+        },
+        "SoySauce": {
+          "before_rate": 42.42424242424242,
+          "after_rate": 38.38383838383838,
+          "change": -4.0404040404040416,
+          "change_direction": "decrease"
+        }
+      }
+    },
+    "q3_analysis": {
+      "before": {
+        "TeaLeavesDissolve": {
+          "true_rate": 8.080808080808081,
+          "count": 8,
+          "total": 99
+        },
+        "TeaComponentsDissolve": {
+          "true_rate": 57.57575757575758,
+          "count": 57,
+          "total": 99
+        }
+      },
+      "after": {
+        "TeaLeavesDissolve": {
+          "true_rate": 6.0606060606060606,
+          "count": 6,
+          "total": 99
+        },
+        "TeaComponentsDissolve": {
+          "true_rate": 67.67676767676768,
+          "count": 67,
+          "total": 99
+        }
+      },
+      "comparison": {
+        "TeaLeavesDissolve": {
+          "before_rate": 8.080808080808081,
+          "after_rate": 6.0606060606060606,
+          "change": -2.0202020202020208,
+          "change_direction": "decrease"
+        },
+        "TeaComponentsDissolve": {
+          "before_rate": 57.57575757575758,
+          "after_rate": 67.67676767676768,
+          "change": 10.101010101010104,
+          "change_direction": "increase"
+        }
+      }
+    },
+    "evaluation_analysis": {
+      "Q4_ExperimentInterestRating": {
+        "count": 99,
+        "mean": 3.080808080808081,
+        "std": 1.3452620386330298,
+        "median": 4.0,
+        "mode": 4,
+        "distribution": {
+          "1": 28,
+          "2": 1,
+          "3": 5,
+          "4": 65
+        }
+      },
+      "Q5_NewLearningsRating": {
+        "count": 99,
+        "mean": 3.0303030303030303,
+        "std": 1.2893167424406085,
+        "median": 4.0,
+        "mode": 4,
+        "distribution": {
+          "1": 26,
+          "2": 2,
+          "3": 14,
+          "4": 57
+        }
+      },
+      "Q6_DissolvingUnderstandingRating": {
+        "count": 99,
+        "mean": 2.9696969696969697,
+        "std": 1.2893167424406085,
+        "median": 4.0,
+        "mode": 4,
+        "distribution": {
+          "1": 27,
+          "2": 2,
+          "3": 17,
+          "4": 53
+        }
+      }
+    },
+    "class_analysis": {
+      "授業前": {
+        "distribution": {
+          "1.0": 24,
+          "2.0": 26,
+          "3.0": 24,
+          "4.0": 25
+        },
+        "total": 99,
+        "classes": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "授業後": {
+        "distribution": {
+          "1.0": 24,
+          "2.0": 26,
+          "3.0": 24,
+          "4.0": 25
+        },
+        "total": 99,
+        "classes": [
+          1,
+          2,
+          3,
+          4
+        ]
+      }
+    }
+  }
+}

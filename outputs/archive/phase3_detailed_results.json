@@ -1,0 +1,481 @@
+{
+  "class_comparison": {
+    "before_analysis": {
+      "Q1_total_before": {
+        "variable": "Q1_total_before",
+        "label": "Q1総合スコア（授業前）",
+        "n_total": 26,
+        "n_classes": 3,
+        "classes": [
+          2.0,
+          3.0,
+          4.0
+        ],
+        "descriptive_stats": {
+          "2.0": {
+            "n": 1,
+            "mean": 3.0,
+            "std": NaN,
+            "median": 3.0
+          },
+          "3.0": {
+            "n": 24,
+            "mean": 3.2083333333333335,
+            "std": 0.6580053301400783,
+            "median": 3.0
+          },
+          "4.0": {
+            "n": 1,
+            "mean": 4.0,
+            "std": NaN,
+            "median": 4.0
+          }
+        },
+        "test_type": "Kruskal-Wallis",
+        "test_statistic": 1.7585340295538632,
+        "p_value": 0.41508705287850967,
+        "eta_squared": 0.06189613526570047,
+        "significant": "False",
+        "assumption_tests": {
+          "normality_pvals": [
+            0.00018904389160077714
+          ],
+          "normality_ok": "False",
+          "levene_statistic": null,
+          "levene_p": null,
+          "homogeneity_ok": false,
+          "use_parametric": "False"
+        },
+        "posthoc_results": null,
+        "interpretation": "非有意, 大きな効果"
+      },
+      "Q3_total_before": {
+        "variable": "Q3_total_before",
+        "label": "Q3総合スコア（授業前）",
+        "n_total": 26,
+        "n_classes": 3,
+        "classes": [
+          2.0,
+          3.0,
+          4.0
+        ],
+        "descriptive_stats": {
+          "2.0": {
+            "n": 1,
+            "mean": 0.0,
+            "std": NaN,
+            "median": 0.0
+          },
+          "3.0": {
+            "n": 24,
+            "mean": 0.875,
+            "std": 0.3378319623460881,
+            "median": 1.0
+          },
+          "4.0": {
+            "n": 1,
+            "mean": 1.0,
+            "std": NaN,
+            "median": 1.0
+          }
+        },
+        "test_type": "Kruskal-Wallis",
+        "test_statistic": 5.610795454545487,
+        "p_value": 0.060482710764556816,
+        "eta_squared": 0.224431818181818,
+        "significant": "False",
+        "assumption_tests": {
+          "normality_pvals": [
+            5.9699164350403324e-09
+          ],
+          "normality_ok": "False",
+          "levene_statistic": null,
+          "levene_p": null,
+          "homogeneity_ok": false,
+          "use_parametric": "False"
+        },
+        "posthoc_results": null,
+        "interpretation": "非有意, 極めて大きな効果"
+      }
+    },
+    "after_analysis": {
+      "Q1_total_after": {
+        "variable": "Q1_total_after",
+        "label": "Q1総合スコア（授業後）",
+        "n_total": 26,
+        "n_classes": 3,
+        "classes": [
+          2.0,
+          3.0,
+          4.0
+        ],
+        "descriptive_stats": {
+          "2.0": {
+            "n": 1,
+            "mean": 3.0,
+            "std": NaN,
+            "median": 3.0
+          },
+          "3.0": {
+            "n": 24,
+            "mean": 3.125,
+            "std": 0.9469631093315001,
+            "median": 3.0
+          },
+          "4.0": {
+            "n": 1,
+            "mean": 3.0,
+            "std": NaN,
+            "median": 3.0
+          }
+        },
+        "test_type": "Kruskal-Wallis",
+        "test_statistic": 0.04108203766908532,
+        "p_value": 0.9796685107897878,
+        "eta_squared": 0.0013966480446927375,
+        "significant": "False",
+        "assumption_tests": {
+          "normality_pvals": [
+            0.0011561012912866978
+          ],
+          "normality_ok": "False",
+          "levene_statistic": null,
+          "levene_p": null,
+          "homogeneity_ok": false,
+          "use_parametric": "False"
+        },
+        "posthoc_results": null,
+        "interpretation": "非有意, 効果なし/小"
+      },
+      "Q3_total_after": {
+        "variable": "Q3_total_after",
+        "label": "Q3総合スコア（授業後）",
+        "n_total": 26,
+        "n_classes": 3,
+        "classes": [
+          2.0,
+          3.0,
+          4.0
+        ],
+        "descriptive_stats": {
+          "2.0": {
+            "n": 1,
+            "mean": 0.0,
+            "std": NaN,
+            "median": 0.0
+          },
+          "3.0": {
+            "n": 24,
+            "mean": 0.7916666666666666,
+            "std": 0.4148511169990534,
+            "median": 1.0
+          },
+          "4.0": {
+            "n": 1,
+            "mean": 1.0,
+            "std": NaN,
+            "median": 1.0
+          }
+        },
+        "test_type": "Kruskal-Wallis",
+        "test_statistic": 3.5590277777778123,
+        "p_value": 0.1687201440739014,
+        "eta_squared": 0.14236111111111108,
+        "significant": "False",
+        "assumption_tests": {
+          "normality_pvals": [
+            5.976188622554765e-08
+          ],
+          "normality_ok": "False",
+          "levene_statistic": null,
+          "levene_p": null,
+          "homogeneity_ok": false,
+          "use_parametric": "False"
+        },
+        "posthoc_results": null,
+        "interpretation": "非有意, 極めて大きな効果"
+      },
+      "Q4_ExperimentInterestRating": {
+        "variable": "Q4_ExperimentInterestRating",
+        "label": "実験への興味",
+        "n_total": 26,
+        "n_classes": 3,
+        "classes": [
+          2.0,
+          3.0,
+          4.0
+        ],
+        "descriptive_stats": {
+          "2.0": {
+            "n": 1,
+            "mean": 1.0,
+            "std": NaN,
+            "median": 1.0
+          },
+          "3.0": {
+            "n": 24,
+            "mean": 3.7083333333333335,
+            "std": 0.6902530516863499,
+            "median": 4.0
+          },
+          "4.0": {
+            "n": 1,
+            "mean": 2.0,
+            "std": NaN,
+            "median": 2.0
+          }
+        },
+        "test_type": "Kruskal-Wallis",
+        "test_statistic": 7.760534103720413,
+        "p_value": 0.020645311076741748,
+        "eta_squared": 0.4644423558897246,
+        "significant": "True",
+        "assumption_tests": {
+          "normality_pvals": [
+            4.0494398789603484e-08
+          ],
+          "normality_ok": "False",
+          "levene_statistic": null,
+          "levene_p": null,
+          "homogeneity_ok": false,
+          "use_parametric": "False"
+        },
+        "posthoc_results": null,
+        "interpretation": "有意, 極めて大きな効果"
+      },
+      "Q5_NewLearningsRating": {
+        "variable": "Q5_NewLearningsRating",
+        "label": "新しい学び",
+        "n_total": 26,
+        "n_classes": 3,
+        "classes": [
+          2.0,
+          3.0,
+          4.0
+        ],
+        "descriptive_stats": {
+          "2.0": {
+            "n": 1,
+            "mean": 1.0,
+            "std": NaN,
+            "median": 1.0
+          },
+          "3.0": {
+            "n": 24,
+            "mean": 3.7083333333333335,
+            "std": 0.5500329370901873,
+            "median": 4.0
+          },
+          "4.0": {
+            "n": 1,
+            "mean": 3.0,
+            "std": NaN,
+            "median": 3.0
+          }
+        },
+        "test_type": "Kruskal-Wallis",
+        "test_statistic": 6.188454364046529,
+        "p_value": 0.04531001532746149,
+        "eta_squared": 0.5149687220732796,
+        "significant": "True",
+        "assumption_tests": {
+          "normality_pvals": [
+            3.7330214585397945e-07
+          ],
+          "normality_ok": "False",
+          "levene_statistic": null,
+          "levene_p": null,
+          "homogeneity_ok": false,
+          "use_parametric": "False"
+        },
+        "posthoc_results": null,
+        "interpretation": "有意, 極めて大きな効果"
+      },
+      "Q6_DissolvingUnderstandingRating": {
+        "variable": "Q6_DissolvingUnderstandingRating",
+        "label": "溶解理解度",
+        "n_total": 26,
+        "n_classes": 3,
+        "classes": [
+          2.0,
+          3.0,
+          4.0
+        ],
+        "descriptive_stats": {
+          "2.0": {
+            "n": 1,
+            "mean": 1.0,
+            "std": NaN,
+            "median": 1.0
+          },
+          "3.0": {
+            "n": 24,
+            "mean": 3.5833333333333335,
+            "std": 0.7755316082290385,
+            "median": 4.0
+          },
+          "4.0": {
+            "n": 1,
+            "mean": 2.0,
+            "std": NaN,
+            "median": 2.0
+          }
+        },
+        "test_type": "Kruskal-Wallis",
+        "test_statistic": 6.328861204280486,
+        "p_value": 0.04223818530061217,
+        "eta_squared": 0.38095238095238104,
+        "significant": "True",
+        "assumption_tests": {
+          "normality_pvals": [
+            7.117437004864544e-07
+          ],
+          "normality_ok": "False",
+          "levene_statistic": null,
+          "levene_p": null,
+          "homogeneity_ok": false,
+          "use_parametric": "False"
+        },
+        "posthoc_results": null,
+        "interpretation": "有意, 極めて大きな効果"
+      }
+    },
+    "change_analysis": {
+      "Q1_total_change": {
+        "variable": "Q1_total_change",
+        "label": "Q1総合スコア変化量",
+        "n_total": 26,
+        "n_classes": 3,
+        "classes": [
+          2.0,
+          3.0,
+          4.0
+        ],
+        "descriptive_stats": {
+          "2.0": {
+            "n": 1,
+            "mean": 0.0,
+            "std": NaN,
+            "median": 0.0
+          },
+          "3.0": {
+            "n": 24,
+            "mean": -0.08333333333333333,
+            "std": 1.138903617201808,
+            "median": 0.0
+          },
+          "4.0": {
+            "n": 1,
+            "mean": -1.0,
+            "std": NaN,
+            "median": -1.0
+          }
+        },
+        "test_type": "Kruskal-Wallis",
+        "test_statistic": 0.950850720317942,
+        "p_value": 0.6216205875897893,
+        "eta_squared": 0.02676704307820995,
+        "significant": "False",
+        "assumption_tests": {
+          "normality_pvals": [
+            0.01253606804735057
+          ],
+          "normality_ok": "False",
+          "levene_statistic": null,
+          "levene_p": null,
+          "homogeneity_ok": false,
+          "use_parametric": "False"
+        },
+        "posthoc_results": null,
+        "interpretation": "非有意, 中程度の効果"
+      },
+      "Q3_total_change": {
+        "variable": "Q3_total_change",
+        "label": "Q3総合スコア変化量",
+        "n_total": 26,
+        "n_classes": 3,
+        "classes": [
+          2.0,
+          3.0,
+          4.0
+        ],
+        "descriptive_stats": {
+          "2.0": {
+            "n": 1,
+            "mean": 0.0,
+            "std": NaN,
+            "median": 0.0
+          },
+          "3.0": {
+            "n": 24,
+            "mean": -0.08333333333333333,
+            "std": 0.5036101551853348,
+            "median": 0.0
+          },
+          "4.0": {
+            "n": 1,
+            "mean": 0.0,
+            "std": NaN,
+            "median": 0.0
+          }
+        },
+        "test_type": "Kruskal-Wallis",
+        "test_statistic": 0.06839225589228408,
+        "p_value": 0.9663819515424399,
+        "eta_squared": 0.0021929824561403508,
+        "significant": "False",
+        "assumption_tests": {
+          "normality_pvals": [
+            5.406604762011615e-06
+          ],
+          "normality_ok": "False",
+          "levene_statistic": null,
+          "levene_p": null,
+          "homogeneity_ok": false,
+          "use_parametric": "False"
+        },
+        "posthoc_results": null,
+        "interpretation": "非有意, 効果なし/小"
+      }
+    },
+    "summary": {}
+  },
+  "factors_analysis": {
+    "multiple_regression": {
+      "error": "重回帰分析エラー: invalid syntax (<unknown>, line 1)"
+    },
+    "logistic_regression": {
+      "n": 26,
+      "feature_names": [
+        "Q4_ExperimentInterestRating",
+        "Q1_total_before",
+        "Q3_total_before",
+        "class_3.0",
+        "class_4.0"
+      ],
+      "coefficients": [
+        1.6635421681580524,
+        1.0490922073066307,
+        -0.7362824976324858,
+        0.2705273449932423,
+        -0.2181836547381709
+      ],
+      "intercept": 0.8347320976042303,
+      "accuracy": 0.9615384615384616,
+      "precision": 0.9444444444444444,
+      "recall": 1.0,
+      "f1_score": 0.9714285714285714,
+      "class_distribution": {
+        "1": 17,
+        "0": 9
+      },
+      "feature_importance": {
+        "Q4_ExperimentInterestRating": 1.6635421681580524,
+        "Q1_total_before": 1.0490922073066307,
+        "Q3_total_before": 0.7362824976324858,
+        "class_3.0": 0.2705273449932423,
+        "class_4.0": 0.2181836547381709
+      }
+    }
+  }
+}

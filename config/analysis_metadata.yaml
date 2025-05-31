@@ -1,0 +1,180 @@
+# 小学校出前授業アンケート分析 - メタデータ設定
+# ===================================================
+
+project:
+  name: "小学校出前授業アンケート分析"
+  version: "2.0.0"
+  last_updated: "2025-05-31"
+  description: "独立群比較による効果検証分析"
+
+# ===================================================
+# 重要なデータ前提
+# ===================================================
+data_assumptions:
+  page_id_meaning: "ページ番号（個人識別子ではない）"
+  analysis_type: "独立群比較"
+  individual_tracking: false
+  sample_sizes:
+    before_group: 99
+    after_group: 99
+  critical_limitation: "Page_IDによる個人追跡は不可能"
+
+# ===================================================
+# 有効な分析スクリプト（実行順序）
+# ===================================================
+active_scripts:
+  - id: "02"
+    name: "02_independent_groups_analysis.py"
+    path: "scripts/active/02_independent_groups_analysis.py"
+    purpose: "独立群比較分析（χ²検定、Mann-Whitney U検定）"
+    input_files:
+      - "data/analysis/before_excel_compliant.csv"
+      - "data/analysis/after_excel_compliant.csv"
+    output_files:
+      - "outputs/current/02_group_comparison/phase2_revised_results.json"
+      - "outputs/current/02_group_comparison/phase2_revised_report.txt"
+      - "outputs/figures/current/02_group_comparison/*.png"
+    status: "active"
+    last_validated: "2025-05-31"
+    key_findings:
+      - "Q1総合スコア: 有意差あり (p=0.0125, Cohen's d=-0.329)"
+      - "χ²検定: 8項目中0項目が有意"
+      - "Mann-Whitney U: 5項目中5項目が有意"
+
+  - id: "05"
+    name: "05_integrated_report_generator.py"
+    path: "scripts/active/05_integrated_report_generator.py"
+    purpose: "有効な分析結果の統合とレポート生成"
+    depends_on: ["02_independent_groups_analysis.py"]
+    input_files:
+      - "outputs/current/02_group_comparison/phase2_revised_results.json"
+      - "outputs/archive/phase1_detailed_results.json"
+      - "outputs/archive/phase3_detailed_results.json"
+      - "outputs/archive/phase4_detailed_results.json"
+    output_files:
+      - "outputs/current/05_final_report/integrated_final_report.json"
+      - "outputs/current/05_final_report/integrated_final_summary.txt"
+    status: "active"
+    last_validated: "2025-05-31"
+
+# ===================================================
+# 廃止されたファイル（ペアデータ前提のため無効）
+# ===================================================
+deprecated_files:
+  - name: "phase1_comprehensive_analysis.py"
+    reason: "ペアデータ前提の基礎統計分析"
+    moved_to: "scripts/deprecated/"
+    replaced_by: "有効部分のみをphase2で使用"
+    
+  - name: "phase2_statistical_testing.py"
+    reason: "McNemar検定・対応のあるt検定使用（不適切）"
+    moved_to: "scripts/deprecated/"
+    replaced_by: "02_independent_groups_analysis.py"
+    
+  - name: "phase3_group_analysis.py"
+    reason: "ペアデータ前提のクラス分析"
+    moved_to: "scripts/deprecated/"
+    replaced_by: "有効部分のみをintegrated_reportで使用"
+    
+  - name: "phase4_text_mining.py"
+    reason: "個人変化前提のテキスト分析"
+    moved_to: "scripts/deprecated/"
+    replaced_by: "群間差として解釈修正済み"
+    
+  - name: "phase5_integrated_analysis.py"
+    reason: "ペアデータ前提の統合分析"
+    moved_to: "scripts/deprecated/"
+    replaced_by: "05_integrated_report_generator.py"
+
+# ===================================================
+# 出力ファイル分類
+# ===================================================
+output_classification:
+  current:
+    description: "独立群比較前提の有効な結果"
+    location: "outputs/current/"
+    subdirectories:
+      "02_group_comparison": "独立群比較分析結果"
+      "05_final_report": "統合レポート"
+      
+  archive:
+    description: "ペアデータ前提の無効な結果"
+    location: "outputs/archive/"
+    note: "参考用として保存、分析結果としては無効"
+
+# ===================================================
+# 実行環境設定
+# ===================================================
+environment:
+  python_version: "3.12"
+  virtual_env: "venv/"
+  activation_script: "./activate_env.sh"
+  required_packages:
+    - "pandas>=2.2.3"
+    - "numpy>=2.2.6"
+    - "scipy>=1.15.3"
+    - "matplotlib>=3.10.3"
+    - "statsmodels>=0.14.4"
+    - "scikit-learn>=1.6.1"
+
+# ===================================================
+# 品質チェック項目
+# ===================================================
+quality_checks:
+  data_validation:
+    - "Page_ID重複チェック（正常：重複あり）"
+    - "欠損値パターン確認"
+    - "データ型整合性チェック"
+    
+  analysis_validation:
+    - "独立群前提の統計手法使用確認"
+    - "ペアデータ手法の使用禁止チェック"
+    - "効果量の適切な計算確認"
+    
+  interpretation_validation:
+    - "個人変化表現の禁止"
+    - "群間差表現の使用"
+    - "因果推論の限界明記"
+
+# ===================================================
+# ドキュメント体系
+# ===================================================
+documentation:
+  analysis_guides:
+    - "data_assumptions.md": "データ構造と分析前提"
+    
+  project_management:
+    - "session_handover.md": "セッション引き継ぎ"
+    - "quickstart_guide.md": "クイックスタートガイド"
+    - "revision_plan.md": "分析修正計画"
+    - "results_extraction_guide.md": "有効結果抽出ガイド"
+    
+  reports:
+    - "comprehensive_final_report.md": "最終包括レポート"
+
+# ===================================================
+# 緊急時対応
+# ===================================================
+emergency_procedures:
+  incorrect_analysis_detected:
+    - "実行停止"
+    - "deprecated_filesを確認"
+    - "active_scriptsのみ使用"
+    - "data_assumptions再確認"
+    
+  file_confusion:
+    - "config/analysis_metadata.yamlを確認"
+    - "outputs/current/以下のみ使用"
+    - "archiveは参考のみ"
+
+# ===================================================
+# 更新履歴
+# ===================================================
+changelog:
+  "2.0.0":
+    date: "2025-05-31"
+    changes:
+      - "ディレクトリ構造の整理"
+      - "独立群比較前提への統一"
+      - "ペアデータ前提分析の廃止"
+      - "メタデータ管理システム導入"
