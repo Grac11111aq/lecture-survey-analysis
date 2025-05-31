@@ -4,7 +4,12 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-**小学校出前授業アンケート分析** (Elementary School Outreach Lesson Survey Analysis) - An educational effectiveness analysis project using independent groups comparison.
+**東京高専社会実装プロジェクト - 小学校出前授業成果評価**  
+Elementary School Outreach Lesson Analysis for Tokyo KOSEN Social Implementation Project
+
+**プロジェクト目標**: 東京高専が実施した小学校理科出前授業の教育効果をデータに基づいて評価し、プロジェクト完了報告書を作成する。
+
+**報告対象**: プロジェクトメンバー、担当教員、小学校教員、東京高専学生・教員
 
 **Critical Data Constraint**: Page_ID is NOT a personal identifier but simply a page number, making individual tracking impossible. All analyses must be conducted using independent groups comparison methods.
 
@@ -74,11 +79,15 @@ cat outputs/current/execution_log.json
 - Compare before/after groups as independent populations
 - Detect group-level differences using appropriate statistical tests
 - Calculate effect sizes for group comparisons
+- Evaluate educational effectiveness for project completion report
+- Provide practical insights for education stakeholders
 
 ### What This Analysis CANNOT Do
 - Track individual changes (Page_ID ≠ Person_ID)
 - Measure causal effects of the intervention
 - Use paired statistical methods (McNemar, paired t-tests, etc.)
+- Generalize beyond this specific project context
+- Conduct theoretical research or theory building
 
 ## Quality Safeguards
 
@@ -132,3 +141,29 @@ cat outputs/current/execution_log.json
 - Data files must exist in `data/analysis/`
 - Output directories must be pre-created
 - Virtual environment must be activated before execution
+
+## 🎯 Project-Specific Guidelines
+
+### Analysis Focus Areas
+1. **Learning Effectiveness**: Before/after comparison of understanding levels
+2. **Interest & Engagement**: Changes in experimental interest and learning motivation  
+3. **Teaching Method Evaluation**: Effectiveness of specific lesson components
+4. **Stakeholder-Specific Insights**: Tailored findings for each reporting target
+
+### Reporting Requirements
+- **Project Members**: Detailed technical analysis with improvement suggestions
+- **Supervising Teachers**: Academic rigor with methodological validation
+- **Elementary Teachers**: Practical insights with student learning outcomes
+- **Tokyo KOSEN Community**: Social contribution achievements and impact
+
+### Key Success Metrics
+- Statistically significant learning effects (p < 0.05)
+- Practically meaningful effect sizes (Cohen's d > 0.2)
+- High prediction accuracy in ML models (>70%)
+- Positive qualitative feedback in comments analysis
+
+### Important Constraints
+- **Local Focus**: Specific to Tokyo KOSEN outreach project
+- **Completion Report**: Primary goal is project completion documentation
+- **Resource Conscious**: Efficient analysis without over-theorizing
+- **Practical Value**: Emphasis on actionable insights over academic contribution
